@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="es-Es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI</title>
+    <title>UMAMI - Hamburguesería de hongos</title>
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap JS local -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Tu JS -->
+    <script src="assets/js/index.js" defer></script>
+
+
 </head>
+
 <body>
-    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="img/ui/logo-umami.png" alt="UMAMI Logo" width="40" height="40" class="me-2">
+                    UMAMI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Banner -->
+        <section class="hero d-flex align-items-center text-center text-light"
+            style="background: url('assets/img/UI/banner.png') center/cover no-repeat; height: 90vh; margin-top: 56px;">
+            <div class="container">
+                <!-- <h1 class="display-2 fw-bold" style="font-family: 'Souvenir', serif;">
+                    Más UMAMI, menos drama
+                </h1> -->
+                <!-- <p class="lead">Hamburguesas de hongos irresistibles</p> -->
+                <a href="menu.html" class="btn btn-light btn-lg mt-3">Ver menú</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Columna izquierda -->
+                    <div class="col-lg-6">
+                        <article class="hover-card h-100">
+                            <img src="img/productos/hongo-burger.jpg" alt="Hamburguesa de hongos clásica"
+                                class="img-fluid">
+                            <div class="hover-info">
+                                <h2>Hamburguesa Clásica</h2>
+                                <p>Preparada con gírgolas frescas y pan artesanal. Saludable y deliciosa.</p>
+                                <a href="detalle.html" class="btn btn-light">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Columna derecha (dos rectángulos) -->
+                    <div class="col-lg-6 d-flex flex-column gap-4">
+                        <article class="hover-card flex-fill">
+                            <img src="img/productos/umami-wrap.jpg" alt="Wrap vegetariano de hongos" class="img-fluid">
+                            <div class="hover-info">
+                                <h2>Wrap de Hongos</h2>
+                                <p>Ligero, nutritivo y con el sabor umami que buscás.</p>
+                                <a href="detalle.html" class="btn btn-light">Ver más</a>
+                            </div>
+                        </article>
+
+                        <article class="hover-card flex-fill">
+                            <img src="img/productos/umami-nuggets.jpg" alt="Nuggets de hongos" class="img-fluid">
+                            <div class="hover-info">
+                                <h2>Nuggets de Hongos</h2>
+                                <p>Crocantes, veganos y listos para compartir.</p>
+                                <a href="detalle.html" class="btn btn-light">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de productos destacados -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Productos Destacados</h2>
+                <div class="row g-4">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/productos/hamburguesa1.jpg" class="card-img-top"
+                                alt="Hamburguesa clásica de hongos">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Hamburguesa Clásica</h3>
+                                <p class="card-text">Sabor auténtico a base de gírgolas, fresca y deliciosa.</p>
+                                <p class="fw-bold">$2500</p>
+                                <a href="detalle.html" class="btn btn-success">Ver detalle</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Repetir otros productos destacados -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">¿Por qué elegir UMAMI?</h2>
+                <div class="row text-center g-4">
+                    <article class="col-md-4">
+                        <div class="p-3">
+                            <img src="img/ui/ico-salud.svg" alt="Ícono salud" width="60">
+                            <h3 class="h5 mt-3">Salud y bienestar</h3>
+                            <p>Ingredientes frescos y naturales, sin ultraprocesados.</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="p-3">
+                            <img src="img/ui/ico-sustentabilidad.svg" alt="Ícono sustentabilidad" width="60">
+                            <h3 class="h5 mt-3">Sustentabilidad</h3>
+                            <p>Producción de bajo impacto ambiental con hongos nutritivos.</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="p-3">
+                            <img src="img/ui/ico-inclusion.svg" alt="Ícono inclusión" width="60">
+                            <h3 class="h5 mt-3">Inclusión</h3>
+                            <p>Opciones para veganos, vegetarianos y curiosos del buen comer.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · Email: lucho@example.com</p>
+    </footer>
 </body>
+
 </html>
