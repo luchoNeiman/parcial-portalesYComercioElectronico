@@ -1,3 +1,4 @@
+/* RESET */
 *,
 *::before,
 *::after {
@@ -35,6 +36,11 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+
+footer {
+    font-size: 0.9rem;
 }
 
 h1,
@@ -81,8 +87,8 @@ a {
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-    outline: 3px solid var(--color-umami-cream);
-    outline-offset: 2px;
+    outline: .2em solid var(--color-umami-cream);
+    outline-offset: 2.15em;
 }
 
 button,
@@ -112,6 +118,10 @@ table {
     color: var(--color-umami-green) !important;
 }
 
+.text-umami-cream {
+    color: var(--color-umami-cream) !important;
+}
+
 .bg-umami {
     background-color: var(--color-umami-green) !important;
     color: var(--color-umami-cream);
@@ -125,8 +135,8 @@ table {
 
 /* BANNER - HOME */
 .banner-home {
-    height: 100vh;
-    background: url("../img/ui/banner.jpg") center/cover no-repeat;
+    height: 88vh;
+    background: url("../img/ui/banner-home.webp") center/cover no-repeat;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -136,7 +146,7 @@ table {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 1.875em;
     padding: 0.75rem 1.5rem;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -148,12 +158,14 @@ table {
     text-decoration: none;
 }
 
-/* Hover Cards */
+
+
+/* PRODUCTOS DESTACADOS - HOME */
 .hover-card {
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: .75em;
+    box-shadow: 0 .25em .75em rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
@@ -167,7 +179,7 @@ table {
 .hover-card .hover-info {
     position: absolute;
     inset: 0;
-    background: rgba(43, 54, 29, 0.8);
+    background-color: rgba(43, 54, 29, 0.8);
     color: var(--color-umami-cream);
     display: flex;
     flex-direction: column;
@@ -190,56 +202,3 @@ table {
 }
 
 /* Footer */
-footer {
-    font-size: 0.9rem;
-}
-
-
-
-
-
-
-
-
-
-
-/* 
-.hover-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-}
-
-.hover-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .5s ease;
-}
-
-.hover-card .hover-info {
-    position: absolute;
-    inset: 0;
-    background: rgba(43, 54, 29, 0.8);
-    color: #F9F9BD;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all .5s ease;
-    padding: 1rem;
-}
-
-.hover-card:hover img {
-    transform: scale(1.1);
-}
-
-.hover-card:hover .hover-info {
-    opacity: 1;
-    transform: translateY(0);
-} */

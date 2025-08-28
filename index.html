@@ -23,8 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">
-                    <img src="assets/img/ui/logo-umami.png" alt="UMAMI Logo" width="40" height="40" class="me-2">
-                    UMAMI
+                    <img src="assets/img/ui/logo-umami.svg" alt="UMAMI Logo" width="100" class="me-2">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
@@ -32,10 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active text-umami-cream" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link bg-cream rounded mx-2" href="#">Iniciar sesión</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,13 +51,14 @@
 
     <main>
         <!-- Cards destacadas -->
-        <section class="py-5">
+        <section class="py-4 bg-cream">
             <div class="container-fluid">
-                <div class="row g-4">
-                    <!-- Izquierda -->
-                    <div class="col-lg-6">
+                <div class="d-grid gap-4 mx-2" style="grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; grid-template-areas: 'main side1' 'main side2';">
+                    <!-- Izquierda: Hamburguesa Clásica ocupa dos filas -->
+                    <div style="grid-area: main;">
                         <article class="hover-card h-100">
-                            <img src="assets/img/productos/hamburguesa-clasica-umami.webp" alt="Hamburguesa de hongos clásica">
+                            <img src="assets/img/productos/hamburguesa-clasica-umami.webp"
+                                alt="Hamburguesa de hongos clásica">
                             <div class="hover-info">
                                 <h2>Hamburguesa Clásica</h2>
                                 <p>Preparada con gírgolas frescas y pan artesanal. Saludable y deliciosa.</p>
@@ -65,18 +66,22 @@
                             </div>
                         </article>
                     </div>
-                    <!-- Derecha -->
-                    <div class="col-lg-6 d-flex flex-column gap-4">
-                        <article class="hover-card flex-fill">
-                            <img src="assets/img/productos/condimento-umami.webp" alt="Wrap vegetariano de hongos">
+                    <!-- Derecha arriba: Wrap de Hongos -->
+                    <div style="grid-area: side1;">
+                        <article class="hover-card h-100">
+                            <img src="assets/img/productos/condimento-umami-.webp"
+                                alt="Wrap vegetariano de hongos">
                             <div class="hover-info">
                                 <h2>Wrap de Hongos</h2>
                                 <p>Ligero, nutritivo y con el sabor umami que buscás.</p>
                                 <a href="detalle.html" class="btn btn-light">Ver más</a>
                             </div>
                         </article>
-                        <article class="hover-card flex-fill">
-                            <img src="assets/img/productos/sal-umami.webp" alt="Nuggets de hongos">
+                    </div>
+                    <!-- Derecha abajo: Sal -->
+                    <div style="grid-area: side2;">
+                        <article class="hover-card h-100">
+                            <img src="assets/img/productos/sal-umami.webp" alt="Sal Umami">
                             <div class="hover-info">
                                 <h2>Nuggets de Hongos</h2>
                                 <p>Crocantes, veganos y listos para compartir.</p>
