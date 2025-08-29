@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI - Hamburguesería de hongos</title>
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap JS local -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Tu JS -->
+    <script src="assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active text-umami-cream" href="catalogo.html">Menú</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="admin/login.html">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link btn-secondary rounded mx-2" href="login.html">Iniciar
+                                sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="banner-catalogo text-light">
+            <div class="container-titulo-menu text-center">
+                <h1 class="display-4 fw-bold text-umami-cream">Menú UMAMI</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+
+        <!-- Menú general -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Menú UMAMI</h2>
+                <div class="row g-4">
+                    <!-- Producto -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/comboUmami-hamburguesa-papas.webp" alt="Combo Clásico UMAMI">
+                            <div class="hover-info">
+                                <h3>Combo Clásico</h3>
+                                <p>Hamburguesa Clásica + Papas Rústicas + Limonada Umami.</p>
+                                <span class="price">$11.500</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/UI/combo-papas-con-salsas.jpg" alt="Papas con salsas UMAMI">
+                            <div class="hover-info">
+                                <h3>Papas & Salsas</h3>
+                                <p>Papas rústicas acompañadas con tres dips especiales: Umami, BBQ y Alioli.</p>
+                                <span class="price">$6.800</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/mediterranea-umami-productos.webp"
+                                alt="Combo Mediterráneo UMAMI">
+                            <div class="hover-info">
+                                <h3>Combo Mediterráneo</h3>
+                                <p>Hamburguesa Mediterránea + Papas especiadas + Agua Reishi.</p>
+                                <span class="price">$12.000</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-umami text-center py-3 mt-5">
+        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
+    </footer>
+
+</body>
+
+</html>
