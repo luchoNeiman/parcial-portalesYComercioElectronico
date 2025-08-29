@@ -248,6 +248,8 @@ footer {
     grid-area: side2;
 }
 
+
+/* ---------------- HOVER DE LOS PRODUCTOS ---------------- */
 .hover-card {
     position: relative;
     overflow: hidden;
@@ -321,6 +323,30 @@ section article h2 {
     letter-spacing: .1rem;
     font-size: var(--fs-h2);
     margin-bottom: 1.5rem;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+    /* rellena huecos automáticamente */
+}
+
+.catalogo-grid .hover-card {
+    height: 100%;
+}
+
+.catalogo-grid .destacado {
+    grid-column: span 2; /* ocupa el doble de espacio */
+    grid-row: span 2; /* ocupa el doble de espacio */
+}
+
+.catalogo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
