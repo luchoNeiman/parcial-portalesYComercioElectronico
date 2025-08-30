@@ -183,7 +183,7 @@ footer {
 .btn-primary {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
-    border: none;
+    border: 1px solid var(--color-umami-green);
     padding: .5rem 1rem;
     border-radius: .5rem;
     transition: background-color 0.3s, color 0.3s;
@@ -193,6 +193,7 @@ footer {
 .btn-primary:focus {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
+    border: 1px solid var(--color-umami-green);
     text-decoration: none;
 }
 
@@ -328,6 +329,7 @@ section article h2 {
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* columnas flexibles */
     grid-auto-rows: 350px;
     gap: 1.5rem;
     grid-auto-flow: dense;
@@ -339,14 +341,50 @@ section article h2 {
 }
 
 .catalogo-grid .destacado {
-    grid-column: span 2; /* ocupa el doble de espacio */
-    grid-row: span 2; /* ocupa el doble de espacio */
+    grid-column: span 2;
+    /* ocupa el doble de espacio */
+    grid-row: span 2;
+    /* ocupa el doble de espacio */
 }
 
 .catalogo-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+/* ---------------- BANNER CONTACTO ---------------- */
+.banner-contacto {
+    height: 60vh;
+    background: url("../img/ui/entrega-en-auto-umami.webp") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container-titulo-contacto {
+    background-color: rgba(43, 54, 29, 0.8);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+/* ---------------- FORMULARIO CONTACTO ---------------- */
+.contact-form .form-control {
+    border-radius: .5rem;
+    padding: .75rem;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-umami-green);
+    opacity: 0.7;
 }
 
 

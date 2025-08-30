@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI - Hamburguesería de hongos</title>
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap JS local -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Tu JS -->
+    <script src="assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active text-umami-cream" href="catalogo.html">Menú</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="admin/login.html">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link btn-secondary rounded mx-2" href="login.html">Iniciar
+                                sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="banner-contacto text-light">
+            <div class="container-titulo-menu text-center">
+                <h1 class="display-4 fw-bold text-umami-cream">Contacto</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Formulario de contacto -->
+        <section class="py-5 bg-cream">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Formulario -->
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Escribinos</h2>
+                        <div>
+                            <p class="lead">Para más información, preguntas y recomendaciones, completen el formulario y estaremos
+                                leyendo sus respuestas con detenimiento.</p>
+                        </div>
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" id="terminos" class="form-check-input" required>
+                                <label for="terminos" class="form-check-label">Acepto la política de privacidad</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="col-lg-6 bg-umami rounded-4 p-4 text-center">
+                        <h2 class="mb-4">Información</h2>
+                        <p><strong>Dirección:</strong> Av. Siempreviva 742, Buenos Aires</p>
+                        <p><strong>Teléfono:</strong> +54 11 4567 8901</p>
+                        <p><strong>Email:</strong> contacto@umami.com</p>
+                        <p><strong>Horario:</strong> Lun-Dom · 12:00 - 23:00 hs</p>
+                        <div class="mapa mt-4">
+                            <iframe class="w-100 rounded shadow mt-5"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26272.695617469362!2d-58.428620800000004!3d-34.6019627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1756535632544!5m2!1ses!2sar"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-umami text-center py-3">
+        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
+    </footer>
+</body>
+
+</html>
