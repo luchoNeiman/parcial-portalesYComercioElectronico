@@ -180,7 +180,7 @@ footer {
     color: var(--color-umami-green);
 }
 
-.btn-primary {
+.btn-primario {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
     border: 1px solid var(--color-umami-green);
@@ -189,15 +189,15 @@ footer {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primario:hover,
+.btn-primario:focus {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
     border: 1px solid var(--color-umami-green);
     text-decoration: none;
 }
 
-.btn-secondary {
+.btn-secundario {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
     border: 1px solid var(--color-umami-cream);
@@ -207,8 +207,8 @@ footer {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secundario:hover,
+.btn-secundario:focus {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
     text-decoration: none;
@@ -386,6 +386,30 @@ textarea::placeholder {
     color: var(--color-umami-green);
     opacity: 0.7;
 }
+
+
+/* ---------------- DETALLE DEL PRODUCTO ---------------- */
+.detalle-producto h1 {
+  font-size: var(--fs-h2);
+  color: var(--color-umami-green);
+}
+
+.detalle-producto .lead {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.detalle-producto .h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Productos de interés */
+.productos-interes h2 {
+  font-size: var(--fs-h2);
+  color: var(--color-umami-green);
+}
+
 
 
 /* ---------------- FOOTER ---------------- */
