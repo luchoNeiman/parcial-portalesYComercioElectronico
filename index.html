@@ -7,18 +7,18 @@
     <title>UMAMI - Hamburguesería de hongos</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Tu CSS -->
+    <!--CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Bootstrap JS local -->
     <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <!-- Tu JS -->
+    <!-- JS -->
     <script src="assets/js/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top shadow">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">
                     <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
@@ -51,6 +51,7 @@
     </header>
 
     <main>
+
         <!-- Productos destacados -->
         <section class="py-4 bg-cream">
             <div class="container">
@@ -98,29 +99,146 @@
             </div>
         </section>
 
+        <!-- Sección Nosotros / Home -->
+        <section class="py-5 bg-umami text-umami-cream text-center">
+            <div class="container">
+                <h2 class="mb-4">Sobre UMAMI</h2>
+                <p class="lead">
+                    En <strong>UMAMI</strong> creemos que la comida rápida también puede ser <strong>saludable</strong>,
+                    <strong>sustentable</strong> y llena de sabor. Nuestras hamburguesas, wraps y acompañamientos
+                    están elaborados a base de hongos frescos y pan artesanal, logrando una experiencia gastronómica
+                    única.
+                </p>
+                <p>
+                    Apostamos a un modelo de cocina que combina <strong>innovación</strong> y <strong>conciencia
+                        ambiental</strong>.
+                    Cada bocado es el resultado de ingredientes seleccionados y un proceso pensado para
+                    que disfrutes sin culpa, cuidando tu salud y la del planeta.
+                </p>
+                <a href="nosotros.html" class="btn-secondary mt-4">Conocé más</a>
+            </div>
+        </section>
 
-        <section class="py-5 bg-umami">
-            <div class="container my-5">
-                <h2 class="text-center mb-4">¿Por qué elegir UMAMI?</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="assets/img/ui/cartel-luminoso-umami.webp" alt="Hongos UMAMI" class="img-fluid rounded">
+        <section class="py-5 bg-cream">
+            <div class="container">
+                <h2 class="text-center mb-5">Combos UMAMI</h2>
+
+                <div class="row g-4">
+                    <!-- Combo Clásico -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-clasico-umami-productos.webp"
+                                alt="Combo Clásico UMAMI">
+                            <div class="hover-info">
+                                <h3>Combo Clásico</h3>
+                                <p>Hamburguesa Clásica + Papas Rústicas + Limonada Umami.</p>
+                                <span class="price">$11.500</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col-md-6">
-                        <p class="lead">En UMAMI, nos apasiona ofrecerte una experiencia culinaria única con nuestras
-                            hamburguesas de hongos. Utilizamos ingredientes frescos y de alta calidad para crear platos
-                            deliciosos y saludables que satisfacen tanto a vegetarianos como a amantes de la carne.</p>
-                        <p class="lead">Nuestro compromiso con la sostenibilidad y el bienestar animal nos impulsa a
-                            innovar en cada receta, brindándote opciones sabrosas y nutritivas que cuidan de ti y del
-                            planeta.</p>
-                        <p class="lead">Ven y descubre el sabor umami en cada bocado. ¡Te esperamos!</p>
+
+                    <!-- Combo Mediterráneo -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-mediterraneo-umami-productos.webp"
+                                alt="Combo Mediterráneo UMAMI">
+                            <div class="hover-info">
+                                <h3>Combo Mediterráneo</h3>
+                                <p>Hamburguesa Mediterránea + Papas especiadas + Agua Reishi.</p>
+                                <span class="price">$12.800</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Fungi BBQ -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-fungi-bbq-umami-productos.webp" alt="Combo Fungi BBQ">
+                            <div class="hover-info">
+                                <h3>Combo Fungi BBQ</h3>
+                                <p>Hamburguesa Fungi BBQ + Papas & Salsas + Bebida línea Coca-Cola.</p>
+                                <span class="price">$12.600</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Trufa & Shiitake -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-trufa-shiitake-umami-productos.webp"
+                                alt="Combo Trufa & Shiitake">
+                            <div class="hover-info">
+                                <h3>Combo Trufa & Shiitake</h3>
+                                <p>Hamburguesa Trufa & Shiitake + Bastones de shiitake crocantes + Agua Maitake.</p>
+                                <span class="price">$13.900</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Spicy Gírgola -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-spicy-gírgola-umami-productos.webp"
+                                alt="Combo Spicy Gírgola">
+                            <div class="hover-info">
+                                <h3>Combo Spicy Gírgola</h3>
+                                <p>Hamburguesa Spicy Gírgola + Bastones de shiitake crocantes + Limonada UMAMI.</p>
+                                <span class="price">$12.300</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Wrap Saludable -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-wrap-saludable-umami-productos.webp"
+                                alt="Combo Wrap Saludable">
+                            <div class="hover-info">
+                                <h3>Combo Wrap Saludable</h3>
+                                <p>Wrap de Hongos + Papas Rústicas + Agua Mineral.</p>
+                                <span class="price">$10.900</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Nuggets Fan -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-nuggets-fan-umami-productos.webp"
+                                alt="Combo Nuggets Fan">
+                            <div class="hover-info">
+                                <h3>Combo Nuggets Fan</h3>
+                                <p>Nuggets de Hongos + Papas & Salsas + Limonada UMAMI.</p>
+                                <span class="price">$9.800</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Combo Dúo -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-duo-umami-productos.webp" alt="Combo Dúo">
+                            <div class="hover-info">
+                                <h3>Combo Dúo</h3>
+                                <p>2 Hamburguesas a elección + Papas XL con dips + 2 Bebidas.</p>
+                                <span class="price">$22.500</span>
+                                <a href="detalle.html" class="btn-secondary">Ver más</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-umami text-center py-3 mt-5">
+    <footer class="bg-umami text-center py-3 shadow">
         <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
     </footer>
 </body>

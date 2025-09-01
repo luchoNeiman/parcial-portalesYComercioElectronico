@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Hamburguesería de hongos</title>
+    <title>UMAMI - Menú</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Tu CSS -->
@@ -18,7 +18,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top shadow">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">
                     <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
@@ -64,7 +64,10 @@
                             <h3>Clásica Umami</h3>
                             <p>Medallón de gírgolas frescas, queso cheddar vegano, lechuga, tomate, cebolla morada y
                                 salsa especial Umami, en pan artesanal de papa.</p>
-                            <span class="price">$8.200</span>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="price text-decoration-line-through">$8.200</span>
+                                <span class="price">$7.000</span>
+                            </div>
                             <a href="detalle.html" class="btn-secondary">Ver más</a>
                         </div>
                     </article>
@@ -116,11 +119,11 @@
                     </article>
 
                     <article class="hover-card">
-                        <img src="assets/img/UI/banner-home-umami.webp"
+                        <img src="assets/img/productos/hamburguesa-umami-oriental-umami-productos.webp"
                             alt="Umami Oriental">
                         <div class="hover-info">
                             <h3>Umami Oriental</h3>
-                            <p>Hamburguesa de hongos shiitake y portobellos, acompañada de pepino encurtido, salsa de
+                            <p>Hongos shiitake y portobellos, acompañada de pepino encurtido, salsa de
                                 soja dulce, jengibre fresco y mayonesa de wasabi suave en pan artesanal de sésamo.</p>
                             <span class="price">$9.800</span>
                             <a href="detalle.html" class="btn-secondary">Ver más</a>
@@ -152,7 +155,10 @@
                             <h3>Sal Umami</h3>
                             <p>Sal marina infusionada con hongos deshidratados, diseñada para potenciar el sabor natural
                                 de cada plato con un toque único y sofisticado.</p>
-                            <span class="price">$3.200</span>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="price text-decoration-line-through">$3.200</span>
+                                <span class="price">$2.500</span>
+                            </div>
                             <a href="detalle.html" class="btn-secondary">Ver más</a>
                         </div>
                     </article>
@@ -185,7 +191,10 @@
                             <h3>Wrap de Hongos Umami</h3>
                             <p>Tortilla integral rellena de gírgolas salteadas, vegetales frescos y salsa umami
                                 especial. Ligero, nutritivo y lleno de sabor.</p>
-                            <span class="price">$7.800</span>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="price text-decoration-line-through">$7.800</span>
+                                <span class="price">$6.500</span>
+                            </div>
                             <a href="detalle.html" class="btn-secondary">Ver más</a>
                         </div>
                     </article>
@@ -230,7 +239,7 @@
                     </article>
 
                     <article class="hover-card">
-                        <img src="assets/img/productos/limonada-umami-umami-productos.webp"
+                        <img src="assets/img/productos/cerveza-umami-artesanal-umami-productos.webp"
                             alt="Cerveza Artesanal Umami">
                         <div class="hover-info">
                             <h3>Cerveza Artesanal Umami</h3>
@@ -243,9 +252,58 @@
                 </div>
             </div>
         </section>
+
+        <!-- Postres y opciones especiales -->
+        <section class="py-5 bg-umami text-umami-cream">
+            <div class="container">
+                <h2 class="text-center mb-5">Postres y opciones especiales</h2>
+                <div class="catalogo-grid">
+                    <article class="hover-card">
+                        <img src="assets/img/productos/cheesecake-reishi-umami-productos.webp" alt="Cheesecake Reishi">
+                        <div class="hover-info">
+                            <h3>Cheesecake Reishi</h3>
+                            <p>Cheesecake cremoso con base de galletas integrales y un toque de hongo reishi.</p>
+                            <span class="price">$5.200</span>
+                            <a href="detalle.html" class="btn-secondary">Ver más</a>
+                        </div>
+                    </article>
+
+                    <article class="hover-card">
+                        <img src="assets/img/productos/brownie-shiitake-umami-productos.webp" alt="Brownie Shiitake">
+                        <div class="hover-info">
+                            <h3>Brownie Shiitake</h3>
+                            <p>Brownie húmedo con extracto de shiitake, chocolate amargo 70% y nueces.</p>
+                            <span class="price">$4.500</span>
+                            <a href="detalle.html" class="btn-secondary">Ver más</a>
+                        </div>
+                    </article>
+
+                    <article class="hover-card">
+                        <img src="assets/img/productos/andina-gluten-free-umami-productos.webp"
+                            alt="Andina Gluten Free">
+                        <div class="hover-info">
+                            <h3>Andina Gluten Free</h3>
+                            <p>Medallón de hongos y lentejas, pan de quinoa sin gluten, palta fresca y brotes.</p>
+                            <span class="price">$8.500</span>
+                            <a href="detalle.html" class="btn-secondary">Ver más</a>
+                        </div>
+                    </article>
+
+                    <article class="hover-card">
+                        <img src="assets/img/productos/tex-mex-veggie-umami-productos.webp" alt="Tex-Mex Veggie">
+                        <div class="hover-info">
+                            <h3>Tex Mex Veggie</h3>
+                            <p>Portobello especiado, guacamole, maíz asado, pico de gallo y nachos crocantes.</p>
+                            <span class="price">$9.200</span>
+                            <a href="detalle.html" class="btn-secondary">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-umami text-center py-3 mt-5">
+    <footer class="bg-umami text-center py-3 shadow">
         <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
     </footer>
 
