@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI - Iniciar sesión</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-umami d-flex align-items-center justify-content-center vh-100">
+    <main class="login-container bg-cream p-5 rounded shadow-lg text-center">
+        <a href="index.html">
+            <img src="assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="mb-4 w-50">
+        </a>
+        <h1 class="h3 mb-4">Iniciar sesión</h1>
+
+        <!-- Formulario -->
+        <form action="#" method="post">
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="tuemail@ejemplo.com"
+                    required>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="••••••••"
+                    required>
+            </div>
+            <button type="submit" class="btn-primario w-100 mb-3">Ingresar</button>
+        </form>
+
+        <!-- Extras -->
+        <p class="mt-3">¿No tenés cuenta?
+            <a href="registro.html" class="text-umami-green fw-bold">Registrate acá</a>
+        </p>
+        <p><a href="#" class="text-muted small">¿Olvidaste tu contraseña?</a></p>
+    </main>
+</body>
+
+</html>

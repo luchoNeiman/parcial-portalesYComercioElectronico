@@ -357,7 +357,7 @@ section article h2 {
 
 /* ---------------- BANNER CONTACTO ---------------- */
 .banner-contacto {
-    height: 60vh;
+    height: 88vh;
     background: url("../img/ui/entrega-en-auto-umami.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -388,7 +388,7 @@ textarea::placeholder {
 }
 
 
-/* ---------------- DETALLE DEL PRODUCTO ---------------- */
+/* ---------------- DETALLE ---------------- */
 .detalle-producto h1 {
   font-size: var(--fs-h2);
   color: var(--color-umami-green);
@@ -410,6 +410,41 @@ textarea::placeholder {
   color: var(--color-umami-green);
 }
 
+
+
+/* ---------------- BANNER NOSOTROS ---------------- */
+.banner-nosotros {
+    height: 88vh;
+    background: url("../img/ui/cartel-luminoso-umami.webp") center /cover no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+/* ---------------- NOSOTROS ---------------- */
+.pilar-box {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.pilar-box:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ---------------- LOGIN ---------------- */
+.login-container {
+  max-width: 420px;
+}
+
+body.bg-umami {
+  background-color: #2f4f4f; /* gris oscuro de la paleta */
+}
 
 
 /* ---------------- FOOTER ---------------- */
