@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI - Mi Perfil</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="catalogo.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="carrito.html"><i
+                                    class="bi bi-cart fs-5"></i></a></li>
+                        <li class="nav-item"><a class="nav-link active text-umami-cream" href="perfil.html"><i
+                                    class="bi bi-person-circle fs-5"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5 bg-cream">
+        <div class="container mt-5 pt-4">
+            <h1 class="text-center mb-4">Mi Perfil</h1>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Datos del usuario -->
+                <div class="col-md-6">
+                    <div class="card bg-umami text-umami-cream shadow-lg border-0 rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-person-circle fs-1 me-3"></i>
+                            <div>
+                                <h2 class="h4 mb-0">Luciano Neiman</h2>
+                                <small>luciano.neiman@davinci.edu.ar</small>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Información personal</h3>
+                        <ul class="list-unstyled">
+                            <li>📍 Ciudad Autónoma de Buenos Aires</li>
+                            <li>📞 +54 11 1234 5678</li>
+                            <li>🌱 Usuario desde: Enero 2025</li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="editar-perfil.html" class="btn-secundario">Editar perfil</a>
+                            <a href="index.html" class="btn-primario ms-2">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-umami text-center py-3">
+        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
+    </footer>
+</body>
+
+</html>
