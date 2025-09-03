@@ -183,7 +183,7 @@ footer {
 .btn-primario {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
-    border: 1px solid var(--color-umami-green);
+    border: 1px solid var(--color-umami-cream);
     padding: .5rem 1rem;
     border-radius: .5rem;
     transition: background-color 0.3s, color 0.3s;
@@ -218,18 +218,18 @@ footer {
 
 /* ---------------- NAVBAR ---------------- */
 .navbar .nav-link i {
-  transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .navbar .nav-link:hover i {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .badge {
-  font-size: 0.7rem;
-  margin-top: 1em;
-  padding: 0.35em 0.5em;
-  border: 1px solid var(--color-umami-green);
+    font-size: 0.7rem;
+    margin-top: 1em;
+    padding: 0.35em 0.5em;
+    border: 1px solid var(--color-umami-green);
 }
 
 
@@ -407,24 +407,24 @@ textarea::placeholder {
 
 /* ---------------- DETALLE ---------------- */
 .detalle-producto h1 {
-  font-size: var(--fs-h2);
-  color: var(--color-umami-green);
+    font-size: var(--fs-h2);
+    color: var(--color-umami-green);
 }
 
 .detalle-producto .lead {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .detalle-producto .h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* Productos de interés */
 .productos-interes h2 {
-  font-size: var(--fs-h2);
-  color: var(--color-umami-green);
+    font-size: var(--fs-h2);
+    color: var(--color-umami-green);
 }
 
 
@@ -432,7 +432,7 @@ textarea::placeholder {
 /* ---------------- BANNER NOSOTROS ---------------- */
 .banner-nosotros {
     height: 88vh;
-    background: url("../img/ui/cartel-luminoso-umami.webp") center /cover no-repeat; 
+    background: url("../img/ui/cartel-luminoso-umami.webp") center /cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,36 +442,50 @@ textarea::placeholder {
 
 /* ---------------- NOSOTROS ---------------- */
 .pilar-box {
-  border: 2px solid;
-  border-radius: 12px;
-  padding: 2rem;
-  text-align: center;
-  transition: transform 0.2s ease;
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s ease;
 }
 
 .pilar-box:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 
 /* ---------------- LOGIN ---------------- */
 .login-container {
-  max-width: 420px;
+    max-width: 420px;
 }
 
 
 /* ---------------- PERFIL ---------------- */
 .card.bg-umami {
-  border: 2px solid var(--color-umami-cream);
+    border: 2px solid var(--color-umami-cream);
 }
 
 .card h2,
 .card h3 {
-  font-family: var(--font-heading);
+    font-family: var(--font-heading);
 }
 
 .card ul li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ---------------- EDITAR PERFIL ---------------- */
+form.bg-umami {
+    border: 2px solid var(--color-umami-cream);
+}
+
+form .form-label {
+    font-weight: 600;
+}
+
+form .form-control {
+    border-radius: 0.75rem;
 }
 
 
