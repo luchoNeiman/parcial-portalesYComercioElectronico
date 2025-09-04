@@ -22,7 +22,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top shadow">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2 w-50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <!-- Separador -->
-                        <div class="vr mx-2 d-none d-lg-block"></div>
+                        <li class="vr mx-2 d-none d-lg-block"> </li>
 
                         <!-- Carrito -->
                         <li class="nav-item position-relative">
@@ -60,8 +60,6 @@
                                 </span>
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -71,13 +69,13 @@
         <!-- Banner -->
         <section class="banner-home text-light">
             <div class="container text-center">
-                <h4><a href="catalogo.html" class="btn-primario btn-lg mt-3 fw-bold">Ver menú</a></h4>
+                <h1 class="ver-menu-home"><a href="catalogo.html" class="btn-primario btn-lg mt-3 fs-4">Ver menú</a>
+                </h1>
             </div>
         </section>
     </header>
 
     <main>
-
         <!-- Productos destacados -->
         <section class="py-4 bg-cream">
             <div class="container">
@@ -90,7 +88,7 @@
                             <img src="assets/img/productos/hamburguesa-clasica-umami-destacados.webp"
                                 alt="Hamburguesa de hongos clásica UMAMI">
                             <div class="hover-info">
-                                <h2>Hamburguesa Clásica</h2>
+                                <h3>Hamburguesa Clásica</h3>
                                 <p>Preparada con gírgolas frescas y pan artesanal. Saludable y deliciosa.</p>
                                 <a href="detalle.html" class="btn-secundario">Ver más</a>
                             </div>
@@ -103,7 +101,7 @@
                             <img src="assets/img/productos/wrap-de-hongos-umami-productos.webp"
                                 alt="Wrap vegetariano de hongos">
                             <div class="hover-info">
-                                <h2>Wrap de Hongos</h2>
+                                <h3>Wrap de Hongos</h3>
                                 <p>Ligero, nutritivo y con el sabor umami que buscás.</p>
                                 <a href="detalle.html" class="btn-secundario">Ver más</a>
                             </div>
@@ -115,7 +113,7 @@
                         <article class="hover-card h-100">
                             <img src="assets/img/productos/sal-umami-productos.webp" alt="Sal UMAMI">
                             <div class="hover-info">
-                                <h2>Sal UMAMI</h2>
+                                <h3>Sal UMAMI</h3>
                                 <p>Crocantes, veganos y listos para condimentar.</p>
                                 <a href="detalle.html" class="btn-secundario">Ver más</a>
                             </div>
@@ -135,20 +133,19 @@
                     están elaborados a base de hongos frescos y pan artesanal, logrando una experiencia gastronómica
                     única.
                 </p>
-                <p>
+                <p class="lead">
                     Apostamos a un modelo de cocina que combina <strong>innovación</strong> y <strong>conciencia
                         ambiental</strong>.
                     Cada bocado es el resultado de ingredientes seleccionados y un proceso pensado para
                     que disfrutes sin culpa, cuidando tu salud y la del planeta.
                 </p>
-                <a href="nosotros.html" class="btn-secundario mt-4">Conocé más</a>
+                <a href="nosotros.html" class="btn-secundario">Conocé más</a>
             </div>
         </section>
 
         <section class="py-5 bg-cream">
             <div class="container">
                 <h2 class="text-center mb-5">Combos UMAMI</h2>
-
                 <div class="row g-4">
                     <!-- Combo Clásico -->
                     <div class="col-md-4">
@@ -259,13 +256,28 @@
                             </div>
                         </article>
                     </div>
+
+                    <!-- Combo sal y wrap -->
+                    <div class="col-md-4">
+                        <article class="hover-card">
+                            <img src="assets/img/productos/combo-sobres-cerveza-postre-umami-productos.webp"
+                                alt="Combo wrap y sal">
+                            <div class="hover-info">
+                                <h3>Combo wrap y sal</h3>
+                                <p>Wrap de hpngos deliciosos, condimentados con sal umami y una cerveza para acompañar.
+                                    Luego de eso un tiramisu umami de postre.</p>
+                                <span class="price">$13.500</span>
+                                <a href="detalle.html" class="btn-secundario">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-umami text-center py-3 shadow">
-        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · luciano.neiman@davinci.edu.ar</p>
+        <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · 19/04/2004 · luciano.neiman@davinci.edu.ar</p>
     </footer>
 </body>
 

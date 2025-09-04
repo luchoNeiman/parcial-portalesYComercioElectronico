@@ -162,6 +162,12 @@ footer {
 
 
 /* ---------------- UTILIDADES ---------------- */
+.active {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
 .text-umami {
     color: var(--color-umami-green) !important;
 }
@@ -183,7 +189,7 @@ footer {
 .btn-primario {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
-    border: 1px solid var(--color-umami-cream);
+    border: 2px solid var(--color-umami-cream);
     padding: .5rem 1rem;
     border-radius: .5rem;
     transition: background-color 0.3s, color 0.3s;
@@ -193,14 +199,14 @@ footer {
 .btn-primario:focus {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
-    border: 1px solid var(--color-umami-green);
+    border: 2px solid var(--color-umami-green);
     text-decoration: none;
 }
 
 .btn-secundario {
     background-color: var(--color-umami-cream);
     color: var(--color-umami-green);
-    border: 1px solid var(--color-umami-cream);
+    border: 2px solid var(--color-umami-cream);
     padding: .5rem 1rem;
     border-radius: .5rem;
     font-weight: 600;
@@ -212,7 +218,7 @@ footer {
     background-color: var(--color-umami-green);
     color: var(--color-umami-cream);
     text-decoration: none;
-    border: 1px solid var(--color-umami-cream);
+    border: 2px solid var(--color-umami-cream);
 }
 
 
@@ -243,6 +249,12 @@ footer {
     padding: 2rem;
 
 }
+
+.ver-menu-home {
+    text-transform: capitalize;
+    font: var(--font-subheading);
+}
+
 
 
 /* ---------------- PRODUCTOS DESTACADOS / HOME ---------------- */
@@ -461,6 +473,13 @@ textarea::placeholder {
 
 
 /* ---------------- PERFIL ---------------- */
+.contenedor-avatar-perfil {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .card.bg-umami {
     border: 2px solid var(--color-umami-cream);
 }
