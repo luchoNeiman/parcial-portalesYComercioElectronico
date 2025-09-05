@@ -25,6 +25,13 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--color-umami-cream);
 }
 
 img,
@@ -158,6 +165,7 @@ small {
 
 footer {
     font-size: var(--fs-small);
+
 }
 
 
@@ -219,6 +227,14 @@ footer {
     color: var(--color-umami-cream);
     text-decoration: none;
     border: 2px solid var(--color-umami-cream);
+}
+
+.border-bottom-cream {
+    border-bottom: 1px solid var(--color-umami-cream);
+}
+
+.border-top-cream {
+    border-top: 1px solid var(--color-umami-cream);
 }
 
 
@@ -480,6 +496,10 @@ textarea::placeholder {
     font-weight: bold;
 }
 
+.cont-border-miPerfil {
+    border-top: 2px solid var(--color-umami-cream);
+}
+
 .card.bg-umami {
     border: 2px solid var(--color-umami-cream);
 }
@@ -495,18 +515,23 @@ textarea::placeholder {
 
 
 /* ---------------- EDITAR PERFIL ---------------- */
-form.bg-umami {
+form .bg-umami {
     border: 2px solid var(--color-umami-cream);
 }
 
-form .form-label {
+form label {
     font-weight: 600;
 }
 
-form .form-control {
-    border-radius: 0.75rem;
+form input {
+    border-radius: .5rem;
 }
 
+/* ---------------- CARRITO ---------------- */
+.size-img-producto-carrito {
+    width: 5rem;
+    height: auto;
+}
 
 
 /* ---------------- FOOTER ---------------- */
@@ -514,4 +539,5 @@ footer {
     padding: 1rem;
     text-align: center;
     border-top: #F9F9BD solid 1px;
+    flex-shrink: 0;
 }

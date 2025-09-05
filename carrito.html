@@ -36,7 +36,7 @@
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil.html">Perfil</a></li>
-                        <div class="vr mx-2 d-none d-lg-block"></div>
+                        <li class="vr mx-2 d-none d-lg-block"></li>
                         <li class="nav-item position-relative">
                             <a class="nav-link text-umami-cream" href="carrito.html" aria-label="Carrito">
                                 <i class="bi bi-cart fs-5"></i>
@@ -52,55 +52,54 @@
         </nav>
     </header>
 
-    <main class="py-5 bg-cream">
-        <div class="container mt-5 pt-4">
-            <h1 class="text-center mb-5">Tu Carrito</h1>
-
+    <main>
+        <section class="container mt-5 pt-4 pb-5">
+            <h1 class="text-center text-umami mb-5">Tu Carrito</h1>
             <div class="row g-4">
                 <!-- Lista de productos -->
                 <div class="col-lg-8">
-                    <div class="card shadow-sm rounded-4 p-4 bg-umami text-umami-cream mb-4">
-                        <h2 class="h5 mb-4">Productos seleccionados</h2>
+                    <div class="card shadow-sm rounded-4 p-4 bg-umami mb-4">
+                        <h2 class="fs-3 mb-4">Productos seleccionados</h2>
 
                         <!-- Producto 1 -->
-                        <div class="d-flex align-items-center mb-4 border-bottom pb-3">
+                        <div class="d-flex align-items-center mb-4 border-bottom-cream pb-3">
                             <img src="assets/img/productos/hamburguesa-clasica-umami-productos.webp"
-                                alt="Hamburguesa Clásica" class="rounded me-3" style="width: 100px; height: auto;">
+                                alt="Hamburguesa Clásica" class="rounded me-3 size-img-producto-carrito">
                             <div class="flex-grow-1">
                                 <h3 class="h6 mb-1">Hamburguesa Clásica</h3>
-                                <p class="mb-1 ">Con pan artesanal y gírgolas frescas</p>
-                                <span class="fw-bold text-umami-green">$7.000</span>
+                                <p class="mb-1">Con pan artesanal y gírgolas frescas</p>
+                                <span class="fw-bold">$7.000</span>
                             </div>
                             <div>
-                                <input type="number" class="form-control form-control-sm w-50" value="1" min="1">
+                                <input type="number" class="form-control form-control-sm w-50 bg-cream" value="1" min="1">
                             </div>
                         </div>
 
                         <!-- Producto 2 -->
-                        <div class="d-flex align-items-center mb-4 border-bottom pb-3">
+                        <div class="d-flex align-items-center mb-4 border-bottom-cream pb-3">
                             <img src="assets/img/productos/combo-papas-salsaUmami-umami-productos.webp"
-                                alt="Combo Papas y Salsa" class="rounded me-3" style="width: 100px; height: auto;">
+                                alt="Combo Papas y Salsa" class="rounded me-3 size-img-producto-carrito">
                             <div class="flex-grow-1">
                                 <h3 class="h6 mb-1">Combo Papas + Salsa Especial</h3>
-                                <p class="mb-1 ">Papas clásicas con salsa de hongos</p>
-                                <span class="fw-bold text-umami-green">$4.200</span>
+                                <p class="mb-1">Papas clásicas con salsa de hongos</p>
+                                <span class="fw-bold">$4.200</span>
                             </div>
                             <div>
-                                <input type="number" class="form-control form-control-sm w-50" value="2" min="1">
+                                <input type="number" class="form-control form-control-sm w-50 bg-cream" value="2" min="1">
                             </div>
                         </div>
 
                         <!-- Producto 3 -->
                         <div class="d-flex align-items-center">
                             <img src="assets/img/productos/limonada-umami-umami-productos.webp" alt="Limonada UMAMI"
-                                class="rounded me-3" style="width: 100px; height: auto;">
+                                class="rounded me-3 size-img-producto-carrito">
                             <div class="flex-grow-1">
                                 <h3 class="h6 mb-1">Limonada UMAMI</h3>
-                                <p class="mb-1 ">Con jengibre y albahaca</p>
-                                <span class="fw-bold text-umami-green">$4.800</span>
+                                <p class="mb-1">Con jengibre y albahaca</p>
+                                <span class="fw-bold">$4.800</span>
                             </div>
                             <div>
-                                <input type="number" class="form-control form-control-sm w-50" value="1" min="1">
+                                <input type="number" class="form-control form-control-sm w-50 bg-cream" value="1" min="1">
                             </div>
                         </div>
                     </div>
@@ -108,8 +107,8 @@
 
                 <!-- Resumen del pedido -->
                 <div class="col-lg-4">
-                    <div class="card bg-umami text-umami-cream shadow-lg border-0 rounded-4 p-4">
-                        <h2 class="h5 mb-4">Resumen</h2>
+                    <div class="card bg-umami shadow-lg border-0 rounded-4 p-4">
+                        <h2 class="fs-3 mb-4">Resumen</h2>
                         <ul class="list-unstyled mb-4">
                             <li class="d-flex justify-content-between">
                                 <span>Subtotal</span>
@@ -119,7 +118,7 @@
                                 <span>Envío</span>
                                 <span>$1.200</span>
                             </li>
-                            <li class="d-flex justify-content-between fw-bold fs-5 border-top pt-2 mt-2">
+                            <li class="d-flex justify-content-between fw-bold fs-5 border-top-cream pt-2 mt-2">
                                 <span>Total</span>
                                 <span>$17.200</span>
                             </li>
@@ -129,7 +128,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="bg-umami text-center py-3 shadow">

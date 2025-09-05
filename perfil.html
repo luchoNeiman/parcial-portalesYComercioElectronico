@@ -31,8 +31,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="catalogo.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
@@ -44,8 +43,7 @@
                             </a>
                         </li>
                         <!-- Separador -->
-                        <div class="vr mx-2 d-none d-lg-block"></div>
-
+                        <li class="vr mx-2 d-none d-lg-block"></li>
                         <!-- Carrito -->
                         <li class="nav-item position-relative">
                             <a class="nav-link text-umami-cream" href="carrito.html" aria-label="Carrito">
@@ -57,29 +55,25 @@
                                 </span>
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="py-5 bg-cream">
-        <div class="container mt-5 pt-4">
-            <h1 class="text-center mb-5">Mi Perfil</h1>
-
+    <main>
+        <section class="container mt-5 pt-5">
+            <h1 class="text-center mb-5 text-umami">Mi Perfil</h1>
             <div class="row g-4">
-                <!-- Columna izquierda: perfil -->
+                <!-- Aside: perfil -->
                 <div class="col-lg-4">
-                    <div class="card bg-umami text-umami-cream shadow-lg border-0 rounded-4 p-4 h-100">
+                    <article class="card bg-umami shadow-lg border-0 rounded-4 p-4 h-100">
                         <!-- Avatar -->
                         <div class="d-flex align-items-center mb-4">
-                            <div class="rounded-circle bg-cream text-umami d-flex justify-content-center align-items-center me-3 contenedor-avatar-perfil">
-                                <p class="mb-0 fs-2 font-weight-bold ">
-                                    LN
-                                </p>
-                            </div>
+                            <figure
+                                class="rounded-circle bg-cream d-flex justify-content-center align-items-center me-3 contenedor-avatar-perfil">
+                                <p class="mb-0 fs-2 fw-bold">LN</p>
+                            </figure>
                             <div>
                                 <h2 class="h4 mb-0">Luciano Neiman</h2>
                                 <small>luciano.neiman@davinci.edu.ar</small>
@@ -87,78 +81,77 @@
                         </div>
 
                         <!-- Info personal -->
-                        <h3 class="h5 mb-3">Información personal</h3>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-geo-fill"></i> Ciudad Autónoma de Buenos Aires</li>
-                            <li><i class="bi bi-telephone"></i> +54 11 1234 5678</li>
-                            <li><i class="bi bi-person-check-fill"></i> Usuario desde: Enero 2025</li>
-                        </ul>
+                        <div>
+                            <h3 class="h5 mb-3">Información personal</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-telephone"></i> +54 11 1234 5678</li>
+                                <li><i class="bi bi-person-check-fill"></i> Usuario desde: Enero 2025</li>
+                            </ul>
+                        </div>
 
                         <!-- Dirección -->
-                        <h3 class="h5 mt-4 mb-3">Dirección de envío</h3>
-                        <p class="mb-1">Av. Corrientes 1234</p>
-                        <p class="mb-1">Piso 5, Dpto. B</p>
-                        <p>CABA, Buenos Aires</p>
-
-                        <!-- Métodos de pago -->
-                        <h3 class="h5 mt-4 mb-3">Métodos de pago</h3>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-credit-card"></i> Visa terminada en 1234</li>
-                            <li><i class="bi bi-credit-card"></i> Mastercard terminada en 5678</li>
-                        </ul>
+                        <div class="mt-4">
+                            <h3 class="h5 mb-3"><i class="bi bi-geo-fill"></i>Dirección de envío</h3>
+                            <p class="mb-1">Av. Corrientes 1234</p>
+                            <p class="mb-1">Piso 5, Dpto. B</p>
+                            <p>CABA, Buenos Aires</p>
+                        </div>
 
                         <!-- Botones -->
-                        <div class="mt-4">
+                        <div class="cont-border-miPerfil pt-3">
                             <a href="editar-perfil.html" class="btn-secundario w-100 mb-2">Editar perfil</a>
                             <a href="index.html" class="btn-primario w-100">Cerrar sesión</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
-                <!-- Columna derecha: historial -->
+                <!-- Section: historial -->
                 <div class="col-lg-8">
-                    <div class="card bg-umami shadow-lg border-0 rounded-4 p-4 h-100">
-                        <h3 class="h5 mb-4">Historial de pedidos</h3>
+                    <article class="card bg-umami shadow-lg border-0 rounded-4 p-4 h-100">
+                        <h2 class="h5 mb-4">Historial de pedidos</h2>
 
                         <table class="table table-striped align-middle">
                             <thead class="table-umami">
                                 <tr>
-                                    <th>Fecha</th>
-                                    <th>Pedido</th>
-                                    <th>Total</th>
-                                    <th>Estado</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Pedido</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Estado</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>15/02/2025</td>
-                                    <td class="d-flex align-items-center gap-2 "><img class="rounded-2"
+                                    <td class="d-flex align-items-center gap-2">
+                                        <img class="rounded-2"
                                             src="assets/img/productos/combo-clasico-umami-productos.webp"
                                             alt="Combo Clásico" width="40">
-                                        <p>Combo Clásico</p>
+                                        <p class="mb-0">Combo Clásico</p>
                                     </td>
                                     <td>$11.500</td>
                                     <td><span class="badge bg-umami">Entregado</span></td>
                                 </tr>
                                 <tr>
                                     <td>02/02/2025</td>
-                                    <td class="d-flex align-items-center gap-2"><img class="rounded"
-                                            src="assets/img/productos/wrap-de-hongos-umami-productos.webp"
-                                            alt="Wrap de hongos" width="40">
-                                        <p>Wrap de Hongos</p>
+                                    <td class="d-flex align-items-center gap-2">
+                                        <img class="rounded"
+                                            src="assets/img/productos/hamburguesa-umami-oriental-umami-productos.webp"
+                                            alt="Umami Oriental" width="40">
+                                        <p class="mb-0">Umami Oriental</p>
                                     </td>
-                                    <td>$6.500</td>
+                                    <td>$9.800</td>
                                     <td><span class="badge bg-umami">Entregado</span></td>
                                 </tr>
                                 <tr>
                                     <td>20/01/2025</td>
-                                    <td class="d-flex align-items-center gap-2"><img class="rounded"
+                                    <td class="d-flex align-items-center gap-2">
+                                        <img class="rounded"
                                             src="assets/img/productos/bastones-shiitake-crocantes-umami-productos.webp"
                                             alt="Bastones Shiitake" width="40">
-                                        <p>Bastones Shiitake</p>
+                                        <p class="mb-0">Bastones Shiitake</p>
                                     </td>
                                     <td>$4.500</td>
-                                    <td><span class="badge bg-cream ">Pendiente</span></td>
+                                    <td><span class="badge bg-cream">Pendiente</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -166,13 +159,11 @@
                         <div class="text-end mt-3">
                             <a href="catalogo.html" class="btn-secundario">Menú</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-
-
 
     <footer class="bg-umami text-center py-3 shadow">
         <p>© 2025 UMAMI · Desarrollado por Luciano Neiman · 19/04/2004 · luciano.neiman@davinci.edu.ar</p>

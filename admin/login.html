@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMAMI - Hamburguesería de hongos</title>
     <!-- Bootstrap CSS local -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!--CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <!-- Bootstrap JS local -->
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
     <!-- JS -->
-    <script src="assets/js/index.js" defer></script>
+    <script src="../assets/js/index.js" defer></script>
     <!-- Iconos Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-umami d-flex align-items-center justify-content-center vh-100">
-    <main class="login-container bg-cream p-5 rounded-5 shadow-lg text-center">
-        <img src="../assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="mb-4 w-50">
-        <h1 class="h3 mb-4">Acceso Administración</h1>
-        <p class="text-muted small mb-4">Solo personal autorizado</p>
-
-        <!-- Formulario -->
-        <form action="dashboard.html" method="post">
-            <div class="mb-3 text-start">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="admin@umami.com" required>
-            </div>
-            <div class="mb-3 text-start">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="••••••••"
-                    required>
-            </div>
-            <button type="submit" class="btn-primario w-100">Ingresar</button>
-        </form>
+<body>
+    <main>
+        <section class="bg-umami d-flex align-items-center justify-content-center vh-100">
+            <!-- Formulario -->
+            <form action="dashboard.html" method="get"
+                class="login-container bg-cream p-5 rounded-5 shadow-lg text-center">
+                <img src="../assets/img/ui/logo-umami-green.svg" alt="Logo UMAMI" class="mb-4 w-50 mx-auto">
+                <h1 class="h3 mb-4">Acceso Administración</h1>
+                <p class="small mb-4">Solo personal autorizado</p>
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="admin@umami.com"
+                        required>
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="••••••••"
+                        required>
+                </div>
+                <button type="submit" class="btn-primario w-100">Ingresar</button>
+            </form>
+        </section>
     </main>
 </body>
 
