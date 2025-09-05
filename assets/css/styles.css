@@ -541,3 +541,21 @@ footer {
     border-top: #F9F9BD solid 1px;
     flex-shrink: 0;
 }
+
+
+/* Grid original solo para escritorio grande */
+@media (min-width: 992px) {
+
+    /* ---------------- HOME ---------------- */
+    .banner-home {
+        height: 75vh;
+    }
+
+    .grid-destacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "main side1" "main side2";
+        gap: 1rem;
+    }
+}
