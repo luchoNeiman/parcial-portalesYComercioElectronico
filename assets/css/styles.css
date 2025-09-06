@@ -18,6 +18,7 @@ html:focus-within {
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -170,6 +171,14 @@ footer {
 
 
 /* ---------------- UTILIDADES ---------------- */
+.borde-verde {
+    border: 2px solid var(--color-umami-green);
+}
+
+.borde-cream {
+    border: 3px solid var(--color-umami-cream);
+}
+
 .active {
     font-weight: 700;
     text-decoration: underline;
@@ -256,7 +265,7 @@ footer {
 
 .contenedor-logo-header {
     width: 10rem;
-    
+
 }
 
 
@@ -492,6 +501,12 @@ textarea::placeholder {
     max-width: 420px;
 }
 
+/* ---------------- REGISTRO ---------------- */
+.registro-container {
+    max-width: 420px;
+    padding: 2rem 2.5rem;
+}
+
 
 /* ---------------- PERFIL ---------------- */
 .contenedor-avatar-perfil {
@@ -548,10 +563,50 @@ footer {
 }
 
 
-/* Grid adaptativo para tablets y móviles */
+/*  Mobile (hasta 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
 
-/* 📱 Mobile (hasta 575px) */
-@media (max-width: 575px) {
+    /* ---------------- PRODUCTOS ---------------- */
+    #carouselDestacados .hover-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hover-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .hover-card img {
+        border-radius: .75em .75em 0 0;
+    }
+
+    .hover-card:hover img {
+        transform: none;
+        /* desactivar zoom */
+    }
+
+    .hover-card .hover-info {
+        position: static;
+        opacity: 1;
+        transform: none;
+        background-color: var(--color-umami-green);
+        color: var(--color-umami-cream);
+        border: 1px solid var(--color-umami-cream);
+        border-radius: 0 0 .75em .75em;
+        padding: 1rem;
+        transition: none;
+    }
+
+    .hover-card .hover-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .hover-card .hover-info p {
+        font-size: .9rem;
+    }
+
     /* ---------------- HOME ---------------- */
     .grid-destacados {
         grid-template-columns: 1fr;
@@ -562,22 +617,259 @@ footer {
     }
 
     .banner-home {
-        height: 50vh;
+        background: url("../img/ui/banner-home-umami.webp") center right/cover no-repeat;
+        height: 40vh;
         padding: 1rem;
     }
 
-    .hover-card .hover-info h3 {
-        font-size: 1.2rem;
+    /* ---------------- MENÚ ---------------- */
+    .banner-catalogo {
+        background: url("../img/ui/menu-fisico-umami.webp") center/cover no-repeat;
+        height: 40vh;
+        padding: 1rem;
     }
 
-    .hover-card .hover-info p {
+    .container-titulo-menu {
+        padding: 1rem 1rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+        /* una sola columna */
+        grid-auto-rows: auto;
+        /* altura automática */
+    }
+
+    .catalogo-grid .destacado {
+        grid-column: span 1;
+        /* los destacados no ocupan doble */
+        grid-row: span 1;
+    }
+
+    /* ---------------- NOSOTROS ---------------- */
+    .banner-nosotros {
+        height: 40vh;
+        padding: 1rem;
+    }
+
+    .intro-nosotros img {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .pilar-box {
+        padding: 1.5rem;
+    }
+
+    .extra-info .row {
+        flex-direction: column;
+    }
+
+    .extra-info img {
+        margin-bottom: 1.5rem;
+    }
+
+    /* ---------------- CONTACTO ---------------- */
+    .banner-contacto {
+        height: 40vh;
+        padding: 1rem;
+    }
+
+    .container-titulo-contacto h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        margin-bottom: 2rem;
+    }
+
+    .mapa iframe {
+        height: 200px;
+    }
+
+    /* ---------------- LOGIN user---------------- */
+    .login-container {
+        width: 90%;
+        padding: 2rem 1.5rem;
+    }
+
+    .login-container img {
+        width: 70%;
+    }
+
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ---------------- REGISTRO ---------------- */
+    .registro-container {
+        width: 90%;
+        padding: 2rem 2.5rem;
+    }
+
+    .registro-container img {
+        width: 70%;
+    }
+
+    .registro-container h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ---------------- PERFIL---------------- */
+    .contenedor-avatar-perfil {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .card.bg-umami {
+        padding: 1.5rem;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive table {
+        min-width: 500px;
+        /* evita que se aplaste demasiado */
+    }
+
+    .cont-border-miPerfil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------- DETALLE ---------------- */
+    .detalle-producto .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detalle-producto img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .detalle-producto h1 {
+        font-size: 1.75rem;
+    }
+
+    .detalle-producto p {
+        font-size: 1rem;
+    }
+
+    .detalle-producto ul {
+        text-align: left;
+        /* que las características sigan alineadas */
+        padding-left: 1.5rem;
+    }
+
+    .productos-interes .row {
+        flex-direction: column;
+    }
+
+    .productos-interes .col-md-4 {
+        width: 100%;
+    }
+
+    .productos-interes h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ---------------- CARRITO ---------------- */
+    .size-img-producto-carrito {
+        width: 4rem;
+    }
+
+    .card.bg-umami h2 {
+        font-size: 1.25rem;
+    }
+
+    .cont-producto-carrito {
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+
+    .cont-producto-carrito img {
+        margin-bottom: 0.75rem;
+    }
+
+    /* ---------------- LOGIN ADMIN RESPONSIVE ---------------- */
+    .login-container {
+        width: 90%;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .login-container img {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .login-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .login-container p {
+        font-size: 0.85rem;
+    }
+
+    .login-container input {
         font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .login-container button {
+        font-size: 0.95rem;
+        padding: 0.6rem;
     }
 }
 
-
-/* 📲 Tablet (576px a 991px) */
+/* Tablet */
 @media (min-width: 576px) and (max-width: 991px) {
+
+    /* ---------------- PRODUCTOS ---------------- */
+    .hover-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .hover-card img {
+        border-radius: .75em .75em 0 0;
+    }
+
+    .hover-card .hover-info {
+        position: static;
+        opacity: 1;
+        transform: none;
+        background-color: var(--color-umami-green);
+        color: var(--color-umami-cream);
+        border: 1px solid var(--color-umami-cream);
+        border-radius: 0 0 .75em .75em;
+        padding: 1rem;
+        transition: none;
+        flex-grow: 1;
+        /* hace que todas las descripciones se estiren */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hover-card:hover img {
+        transform: none;
+        /* desactivar zoom */
+    }
+
+    .hover-card .hover-info h3 {
+        font-size: 1.4rem;
+    }
+
+    /* ---------------- HOME ---------------- */
     .grid-destacados {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -589,22 +881,256 @@ footer {
         height: 60vh;
     }
 
-    .hover-card .hover-info h3 {
-        font-size: 1.4rem;
+    /* ---------------- MENÚ ---------------- */
+    .banner-catalogo {
+        height: 50vh;
     }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr 1fr;
+        /* dos columnas */
+        grid-auto-rows: auto;
+    }
+
+    .catalogo-grid .destacado {
+        grid-column: span 2;
+        /* sí se mantiene destacado */
+        grid-row: span 1;
+        /* no duplicar altura */
+    }
+
+    /* ---------------- NOSOTROS ---------------- */
+    .banner-nosotros {
+        height: 50vh;
+    }
+
+    .intro-nosotros img {
+        max-width: 80%;
+    }
+
+    .pilar-box {
+        height: 100%;
+    }
+
+    .extra-info img {
+        max-width: 100%;
+    }
+
+    /* ---------------- CONTACTO ---------------- */
+    .banner-contacto {
+        height: 50vh;
+    }
+
+    .contact-form {
+        margin-bottom: 2rem;
+    }
+
+    .mapa iframe {
+        height: 250px;
+    }
+
+    /* ---------------- LOGIN user---------------- */
+    .login-container {
+        width: 80%;
+        padding: 2.5rem;
+    }
+
+    .login-container img {
+        width: 60%;
+    }
+
+    .login-container h1 {
+        font-size: 1.75rem;
+    }
+
+    /* ---------------- REGISTRO ---------------- */
+    .registro-container {
+        width: 80%;
+        padding: 2.5rem 2rem;
+    }
+
+    .registro-container img {
+        width: 60%;
+    }
+
+    .registro-container h1 {
+        font-size: 1.75rem;
+    }
+
+    /* ---------------- PERFIL---------------- */
+    .contenedor-avatar-perfil {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.75rem;
+    }
+
+    .card.bg-umami {
+        padding: 2rem;
+    }
+
+    .table-responsive table {
+        min-width: 600px;
+    }
+
+    .cont-border-miPerfil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------- DETALLE ---------------- */
+    .detalle-producto h1 {
+        font-size: 2rem;
+    }
+
+    .detalle-producto img {
+        max-width: 100%;
+    }
+
+    .detalle-producto .row {
+        align-items: flex-start;
+    }
+
+    .productos-interes .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* ---------------- CARRITO ---------------- */
+    .size-img-producto-carrito {
+        width: 4.5rem;
+    }
+
+    .card .d-flex.align-items-center {
+        flex-wrap: wrap;
+    }
+
+    /* ---------------- LOGIN ADMIN RESPONSIVE ---------------- */
+    .login-container {
+        width: 80%;
+        padding: 2.5rem 2rem;
+        border-radius: 1.25rem;
+    }
+
+    .login-container img {
+        width: 55%;
+    }
+
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-container p {
+        font-size: 0.9rem;
+    }
+
+    .login-container button {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+
 }
 
-/* 💻 Desktop chico (992px a 1199px) */
+/* Desktop chico (992px) */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    /* ---------------- HOME ---------------- */
     .banner-home {
         height: 75vh;
     }
-}
 
-/* 🖥️ Desktop grande (1200px en adelante) */
-@media (min-width: 1200px) {
-    .banner-home {
-        height: 88vh;
-        /* como lo tenías */
+    /* ---------------- MENÚ ---------------- */
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-auto-rows: 350px;
+    }
+
+    .catalogo-grid .destacado {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* ---------------- NOSOTROS ---------------- */
+    .banner-nosotros {
+        height: 75vh;
+    }
+
+    .intro-nosotros img {
+        max-width: 45%;
+    }
+
+    /* ---------------- CONTACTO ---------------- */
+    .banner-contacto {
+        height: 75vh;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+
+    /* ---------------- LOGIN user---------------- */
+    .login-container {
+        width: 420px;
+        /* ya definido */
+        padding: 3rem;
+    }
+
+    .login-container img {
+        width: 50%;
+    }
+
+    /* ---------------- REGISTRO---------------- */
+    .registro-container {
+        width: 420px;
+        padding: 3rem 2.5rem;
+    }
+
+    .registro-container img {
+        width: 50%;
+    }
+
+    /* ---------------- PERFIL---------------- */
+    .contenedor-avatar-perfil {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .card.bg-umami {
+        padding: 2.5rem;
+    }
+
+    .cont-border-miPerfil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------- DETALLE ---------------- */
+    .detalle-producto h1 {
+        font-size: 2.5rem;
+    }
+
+    .productos-interes .col-md-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    /* ---------------- CARRITO ---------------- */
+    .size-img-producto-carrito {
+        width: 5rem;
+    }
+
+    /* ---------------- LOGIN ADMIN RESPONSIVE ---------------- */
+    .login-container {
+        max-width: 420px;
+        padding: 3rem 2.5rem;
+    }
+
+    .login-container img {
+        width: 50%;
+    }
+
+    .login-container h1 {
+        font-size: 1.75rem;
     }
 }

@@ -62,7 +62,7 @@
     </header>
 
     <main>
-        <section class="container mt-5 pt-5">
+        <section class="container mt-5 pt-5 pb-5">
             <h1 class="text-center mb-5 text-umami">Mi Perfil</h1>
             <div class="row g-4">
                 <!-- Aside: perfil -->
@@ -84,6 +84,8 @@
                         <div>
                             <h3 class="h5 mb-3">Información personal</h3>
                             <ul class="list-unstyled">
+                                <li><i class="bi bi-cake"></i> Fecha de nacimiento: 19/04/2004</li>
+                                <li><i class="bi bi-gender-male"></i> Hombre</li>
                                 <li><i class="bi bi-telephone"></i> +54 11 1234 5678</li>
                                 <li><i class="bi bi-person-check-fill"></i> Usuario desde: Enero 2025</li>
                             </ul>
@@ -91,7 +93,7 @@
 
                         <!-- Dirección -->
                         <div class="mt-4">
-                            <h3 class="h5 mb-3"><i class="bi bi-geo-fill"></i>Dirección de envío</h3>
+                            <h3 class="h5 mb-3"><i class="bi bi-geo-fill"></i> Dirección de envío</h3>
                             <p class="mb-1">Av. Corrientes 1234</p>
                             <p class="mb-1">Piso 5, Dpto. B</p>
                             <p>CABA, Buenos Aires</p>
@@ -109,52 +111,53 @@
                 <div class="col-lg-8">
                     <article class="card bg-umami shadow-lg border-0 rounded-4 p-4 h-100">
                         <h2 class="h5 mb-4">Historial de pedidos</h2>
-
-                        <table class="table table-striped align-middle">
-                            <thead class="table-umami">
-                                <tr>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Pedido</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Estado</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>15/02/2025</td>
-                                    <td class="d-flex align-items-center gap-2">
-                                        <img class="rounded-2"
-                                            src="assets/img/productos/combo-clasico-umami-productos.webp"
-                                            alt="Combo Clásico" width="40">
-                                        <p class="mb-0">Combo Clásico</p>
-                                    </td>
-                                    <td>$11.500</td>
-                                    <td><span class="badge bg-umami">Entregado</span></td>
-                                </tr>
-                                <tr>
-                                    <td>02/02/2025</td>
-                                    <td class="d-flex align-items-center gap-2">
-                                        <img class="rounded"
-                                            src="assets/img/productos/hamburguesa-umami-oriental-umami-productos.webp"
-                                            alt="Umami Oriental" width="40">
-                                        <p class="mb-0">Umami Oriental</p>
-                                    </td>
-                                    <td>$9.800</td>
-                                    <td><span class="badge bg-umami">Entregado</span></td>
-                                </tr>
-                                <tr>
-                                    <td>20/01/2025</td>
-                                    <td class="d-flex align-items-center gap-2">
-                                        <img class="rounded"
-                                            src="assets/img/productos/bastones-shiitake-crocantes-umami-productos.webp"
-                                            alt="Bastones Shiitake" width="40">
-                                        <p class="mb-0">Bastones Shiitake</p>
-                                    </td>
-                                    <td>$4.500</td>
-                                    <td><span class="badge bg-cream">Pendiente</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped align-middle">
+                                <thead class="table-umami">
+                                    <tr>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Pedido</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>15/02/2025</td>
+                                        <td class="d-flex align-items-center gap-2">
+                                            <img class="rounded-2"
+                                                src="assets/img/productos/combo-clasico-umami-productos.webp"
+                                                alt="Combo Clásico" width="40">
+                                            <p class="mb-0">Combo Clásico</p>
+                                        </td>
+                                        <td>$11.500</td>
+                                        <td><span class="badge bg-umami">Entregado</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02/02/2025</td>
+                                        <td class="d-flex align-items-center gap-2">
+                                            <img class="rounded"
+                                                src="assets/img/productos/hamburguesa-umami-oriental-umami-productos.webp"
+                                                alt="Umami Oriental" width="40">
+                                            <p class="mb-0">Umami Oriental</p>
+                                        </td>
+                                        <td>$9.800</td>
+                                        <td><span class="badge bg-umami">Entregado</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20/01/2025</td>
+                                        <td class="d-flex align-items-center gap-2">
+                                            <img class="rounded"
+                                                src="assets/img/productos/bastones-shiitake-crocantes-umami-productos.webp"
+                                                alt="Bastones Shiitake" width="40">
+                                            <p class="mb-0">Bastones Shiitake</p>
+                                        </td>
+                                        <td>$4.500</td>
+                                        <td><span class="badge bg-cream">Pendiente</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                         <div class="text-end mt-3">
                             <a href="catalogo.html" class="btn-secundario">Menú</a>

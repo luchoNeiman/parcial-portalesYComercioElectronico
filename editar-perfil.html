@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Hamburguesería de hongos</title>
+    <title>UMAMI - Editar Perfil</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -31,14 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="catalogo.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="admin/login.html">Admin</a></li>
-                        <li class="nav-item"><a class="nav-link btn-secundario rounded mx-2" href="login.html">Iniciar
-                                sesión</a></li>
 
                         <!-- Perfil -->
                         <li class="nav-item ms-2">
@@ -46,22 +43,14 @@
                                 <i class="bi bi-person-circle fs-5"></i>
                             </a>
                         </li>
-                        <!-- Separador -->
-                        <li class="vr mx-2 d-none d-lg-block"></li>
-
                         <!-- Carrito -->
                         <li class="nav-item position-relative">
                             <a class="nav-link text-umami-cream" href="carrito.html" aria-label="Carrito">
                                 <i class="bi bi-cart fs-5"></i>
-                                <!-- Contador del carrito -->
                                 <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-cream text-umami">
-                                    0
-                                </span>
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-cream text-umami">0</span>
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -69,60 +58,98 @@
     </header>
 
     <main>
-        <section class="container mt-5 pt-5">
-            <div>
-                <h1 class="text-center mb-4 text-umami">Editar Perfil</h1>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <form class="bg-umami p-4 rounded-4 shadow-lg">
-                            <div class="d-flex gap-4">
-                                <!-- Nombre -->
-                                <div class="mb-3 w-50">
-                                    <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" id="nombre" class="form-control" placeholder="Ej: Luciano" required>
-                                </div>
-    
-                                <!-- Apellido -->
-                                <div class="mb-3 w-50">
-                                    <label for="apellido" class="form-label">Apellido</label>
-                                    <input type="text" id="apellido" class="form-control" placeholder="Ej: Neiman" required>
-                                </div>
+        <section class="container mt-5 pt-5 pb-5">
+            <h1 class="text-center mb-4 text-umami">Editar Perfil</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="bg-umami p-4 rounded-4 shadow-lg">
+
+                        <!-- Avatar + Nombre -->
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-4 gap-4">
+                            <figure
+                                class="rounded-circle bg-cream d-flex justify-content-center align-items-center contenedor-avatar-perfil">
+                                <i class="bi bi-person fs-2 text-umami"></i>
+                            </figure>
+                            <div class="w-100">
+                                <label for="avatar" class="form-label">Actualizar avatar</label>
+                                <input class="form-control borde-cream" type="file" id="avatar" accept="image/*">
                             </div>
-    
-                            <!-- Avatar -->
-                            <div class="mb-3">
-                                <label for="avatar" class="form-label">Avatar</label>
-                                <input class="form-control" type="file" id="avatar" accept="image/*">
+                        </div>
+
+                        <!-- Datos básicos -->
+                        <h2 class="h5 border-bottom-cream pb-2 mb-3">Datos personales</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" id="nombre" class="form-control borde-cream" placeholder="Luciano" required>
                             </div>
-    
-    
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Correo electrónico</label>
-                                <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com"
-                                    required>
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" id="apellido" class="form-control borde-cream" placeholder="Neiman" required>
                             </div>
-    
-                            <!-- Teléfono -->
-                            <div class="mb-3">
-                                <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" id="telefono" class="form-control" placeholder="+54 11 1234 5678">
+                            <div class="col-md-6">
+                                <label for="fechaNac" class="form-label">Fecha de nacimiento</label>
+                                <input type="date" id="fechaNac" class="form-control borde-cream">
                             </div>
-    
-                            <!-- Dirección -->
-                            <div class="mb-3">
-                                <label for="direccion" class="form-label">Dirección</label>
-                                <input type="text" id="direccion" class="form-control"
-                                    placeholder="Ej: Av. Corrientes 1234, CABA">
+                            <div class="col-md-6">
+                                <label for="genero" class="form-label">Género</label>
+                                <select id="genero" class="form-select">
+                                    <option value="" selected>Seleccionar</option>
+                                    <option>Masculino</option>
+                                    <option>Femenino</option>
+                                    <option>Otro</option>
+                                    <option>Prefiero no decirlo</option>
+                                </select>
                             </div>
-    
-                            <!-- Botones -->
-                            <div class="d-flex justify-content-end gap-3">
-                                <a href="perfil.html" class="btn-secundario">Cancelar</a>
-                                <button type="submit" class="btn-primario">Guardar cambios</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+
+                        <!-- Contacto -->
+                        <h2 class="h5 border-bottom-cream pb-2 mt-4 mb-3">Información de contacto</h2>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control borde-cream" placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control borde-cream" placeholder="+54 11 1234 5678">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección de envío</label>
+                            <input type="text" id="direccion" class="form-control borde-cream"
+                                placeholder="Av. Corrientes 1234, CABA">
+                        </div>
+
+                        <!-- Seguridad -->
+                        <h2 class="h5 border-bottom-cream pb-2 mt-4 mb-3">Seguridad</h2>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" id="password" class="form-control borde-cream" placeholder="********">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordConfirm" class="form-label">Confirmar contraseña</label>
+                            <input type="password" id="passwordConfirm" class="form-control borde-cream" placeholder="********">
+                        </div>
+
+                        <!-- Preferencias -->
+                        <h2 class="h5 border-bottom-cream pb-2 mt-4 mb-3">Preferencias</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ofertas">
+                            <label class="form-check-label" for="ofertas">Recibir promociones y novedades por
+                                correo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="notificaciones">
+                            <label class="form-check-label" for="notificaciones">Notificaciones de estado de
+                                pedidos</label>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <a href="perfil.html" class="btn-secundario">Cancelar</a>
+                            <button type="submit" class="btn-primario">Guardar cambios</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
