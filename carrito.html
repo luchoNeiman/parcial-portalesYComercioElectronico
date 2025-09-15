@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Hamburguesería de hongos</title>
+    <title>UMAMI - Registro</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -35,7 +35,13 @@
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="catalogo.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link text-umami-cream" href="contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil.html">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link text-umami-cream" href="admin/login.html">Admin</a></li>
+                        <!-- Perfil -->
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-umami-cream" href="perfil.html" aria-label="Perfil">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </a>
+                        </li>
                         <li class="vr mx-2 d-none d-lg-block"></li>
                         <li class="nav-item position-relative">
                             <a class="nav-link text-umami-cream" href="carrito.html" aria-label="Carrito">
@@ -126,8 +132,8 @@
                                 <span>$17.200</span>
                             </li>
                         </ul>
-                        <a href="#" class="btn-secundario w-100 mb-2">Seguir comprando</a>
-                        <a href="#" class="btn-primario w-100">Finalizar compra</a>
+                        <a href="catalogo.html" class="btn-secundario w-100 mb-2">Seguir comprando</a>
+                        <a href="#" class="btn-primario w-100" id="finalizar-compra">Finalizar compra</a>
                     </div>
                 </div>
 
@@ -135,7 +141,7 @@
                 <div class="modal fade" id="modalCompraExitosa" tabindex="-1" aria-labelledby="modalCompraExitosaLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content text-center">
+                        <div class="modal-content text-center bg-cream">
                             <div class="modal-header border-0">
                                 <h5 class="modal-title w-100" id="modalCompraExitosaLabel">¡Compra realizada con éxito!
                                 </h5>

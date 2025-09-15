@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-Es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Hamburguesería de hongos</title>
+    <title>UMAMI - Dashboard Admin</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -17,296 +17,124 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-umami fixed-top shadow">
-            <div class="container">
-                <a class="navbar-brand contenedor-logo-header" href="../index.html">
-                    <img src="../assets/img/ui/logo-umami.svg" alt="Logo de UMAMI" class="me-2">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#inicio"><i
-                                    class="bi bi-house me-2"></i> Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#pedidos"><i
-                                    class="bi bi-bag me-2"></i> Pedidos</a></li>
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#productos"><i
-                                    class="bi bi-box-seam me-2"></i> Productos</a></li>
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#usuarios"><i
-                                    class="bi bi-people me-2"></i> Usuarios</a></li>
-                        <li class="nav-item"><a class="nav-link text-umami-cream" href="#config"><i
-                                    class="bi bi-gear me-2"></i> Configuración</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="bg-cream">
 
-    <main class="flex-grow-1 p-4 text-umami">
-        <!-- Inicio -->
-        <section id="inicio" class="mb-5 py-5">
-            <div class="container">
-                <h1 class="mb-4">Panel de Control</h1>
+    <main class="d-flex">
+        <!-- Sidebar -->
+        <aside class="aside-dashboard bg-umami d-none d-md-flex flex-column p-3 min-vh-100">
+            <a href="../index.html" class="text-center mb-4">
+                <img src="../assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="w-50">
+            </a>
+            <nav class="flex-grow-1">
+                <ul class="nav flex-column">
+                    <li class="nav-item active"><a class="nav-link text-umami-cream" href="dashboard.html"><i
+                                class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="pedidos.html"><i
+                                class="bi bi-bag me-2"></i> Pedidos</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="productos.html"><i
+                                class="bi bi-box-seam me-2"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"><i
+                                class="bi bi-people me-2"></i> Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"><i
+                                class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html" class="btn-secundario w-100 mt-auto"><i class="bi bi-box-arrow-right me-2"></i>
+                Cerrar
+                sesión</a>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="flex-grow-1 contenedor-contenido-dashboard">
+            <!-- Navbar mobile -->
+            <div class="d-md-none mb-3">
+                <button class="btn btn-primario" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">
+                    <i class="bi bi-list"></i> Menú
+                </button>
+            </div>
+
+            <h1 class="mb-4">Panel de Administración</h1>
+
+            <!-- Métricas rápidas -->
+            <section id="resumen" class="mb-5">
                 <div class="row g-3">
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-3 metricas-rapidas-dashboard">
                         <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>120</h2>
-                            <p>Pedidos Hoy</p>
+                            <h2>12</h2>
+                            <p>Pedidos pendientes</p>
                         </div>
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card bg-umami text-umami-cream text-center p-3">
                             <h2>85</h2>
-                            <p>Productos</p>
+                            <p>Productos activos</p>
                         </div>
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>$75k</h2>
-                            <p>Ingresos</p>
+                            <h2>$120k</h2>
+                            <p>Ventas del mes</p>
                         </div>
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>15</h2>
-                            <p>Usuarios Nuevos</p>
+                            <h2>350</h2>
+                            <p>Usuarios registrados</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Pedidos -->
-        <section id="pedidos" class="mb-5">
-            <div class="container">
-                <h2 class="mb-3">Pedidos</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="bg-umami text-umami-cream">
-                            <tr>
-                                <th>ID</th>
-                                <th>Cliente</th>
-                                <th>Producto</th>
-                                <th>Fecha</th>
-                                <th>Estado</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>001</td>
-                                <td>Ana</td>
-                                <td>Combo Clásico</td>
-                                <td>05/09/25</td>
-                                <td><span class="badge bg-success">Entregado</span></td>
-                            </tr>
-                            <tr>
-                                <td>002</td>
-                                <td>Juan</td>
-                                <td>Wrap de Hongos</td>
-                                <td>05/09/25</td>
-                                <td><span class="badge bg-warning">Pendiente</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- Producto ejemplo -->
-        <section>
-            <div class="container d-flex justify-content-between align-items-center mb-3">
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h3>Burger Umami</h3>
-                        <p>$4500</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <button class="btn-primario w-100" data-bs-toggle="modal"
-                                data-bs-target="#modalEditarProducto">Editar</button>
-                            <button class="btn btn-outline-danger w-100">Eliminar</button>
-                            <button class="btn btn-outline-secondary w-100">Ver</button>
-                            <button class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                data-bs-target="#modalCrearProducto">Crear</button>
-                        </div>
+            <!-- Accesos directos -->
+            <section id="accesos">
+                <h2 class="mb-4">Gestión rápida</h2>
+                <div class="row g-3">
+                    <div class="col-md-4 card-acceso-responsive">
+                        <a href="pedidos.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
+                            <i class="bi bi-bag display-5 mb-3 text-umami"></i>
+                            <h3>Pedidos</h3>
+                            <p class="small">Gestiona los pedidos en curso</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 card-acceso-responsive">
+                        <a href="productos.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
+                            <i class="bi bi-box-seam display-5 mb-3 text-umami"></i>
+                            <h3>Productos</h3>
+                            <p class="small">Administra el menú y los precios</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 card-acceso-responsive">
+                        <a href="usuarios.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
+                            <i class="bi bi-people display-5 mb-3 text-umami"></i>
+                            <h3>Usuarios</h3>
+                            <p class="small">Controla clientes y roles</p>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Producto ejemplo -->
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h3>Burger Umami</h3>
-                        <p>$4500</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <button class="btn-primario w-100" data-bs-toggle="modal"
-                                data-bs-target="#modalEditarProducto">Editar</button>
-                            <button class="btn btn-outline-danger w-100">Eliminar</button>
-                            <button class="btn btn-outline-secondary w-100">Ver</button>
-                            <button class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                data-bs-target="#modalCrearProducto">Crear</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal Crear Producto -->
-        <div class="modal fade" id="modalCrearProducto" tabindex="-1" aria-labelledby="modalCrearProductoLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <form class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalCrearProductoLabel">Crear Producto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="nombreNuevoProducto" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombreNuevoProducto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="precioNuevoProducto" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="precioNuevoProducto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="descripcionNuevoProducto" class="form-label">Descripción</label>
-                            <textarea class="form-control" id="descripcionNuevoProducto" rows="2"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="imagenNuevoProducto" class="form-label">Imagen</label>
-                            <input type="file" class="form-control" id="imagenNuevoProducto" accept="image/*">
-                        </div>
-                        <div class="mb-3">
-                            <label for="categoriaNuevoProducto" class="form-label">Categoría</label>
-                            <select class="form-select" id="categoriaNuevoProducto" required>
-                                <option value="">Seleccionar</option>
-                                <option value="hamburguesa">Hamburguesa</option>
-                                <option value="wrap">Wrap</option>
-                                <option value="bebida">Bebida</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="stockNuevoProducto" class="form-label">Stock</label>
-                            <input type="number" class="form-control" id="stockNuevoProducto" min="0" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalCrearProducto">Crear</button>
-                    </div>
-                </form>
-            </div>
+            </section>
         </div>
-
-        <!-- Modal Editar Producto -->
-        <div class="modal fade" id="modalEditarProducto" tabindex="-1" aria-labelledby="modalEditarProductoLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <form class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalEditarProductoLabel">Editar Producto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="nombreProducto" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombreProducto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="precioProducto" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="precioProducto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="descripcionProducto" class="form-label">Descripción</label>
-                            <textarea class="form-control" id="descripcionProducto" rows="2"></textarea>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger">Eliminar</button>
-                        <button type="submit" class="btn btn-success">Guardar cambios</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Usuarios -->
-        <section id="usuarios" class="mb-5">
-            <div class="container">
-                <h2 class="mb-3">Usuarios</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="bg-umami text-umami-cream">
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Email</th>
-                                <th>Rol</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Ana</td>
-                                <td>ana@mail.com</td>
-                                <td>Cliente</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Juan</td>
-                                <td>juan@mail.com</td>
-                                <td>Cliente</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Admin</td>
-                                <td>admin@umami.com</td>
-                                <td>Admin</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- Configuración -->
-        <section id="config" class="mb-5">
-            <div class="container">
-                <h2 class="mb-3">Configuración</h2>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="notificaciones" checked>
-                    <label class="form-check-label" for="notificaciones">Notificaciones</label>
-                </div>
-                <div class="form-check form-switch mt-2">
-                    <input class="form-check-input" type="checkbox" id="modoOscuro">
-                    <label class="form-check-label" for="modoOscuro">Modo oscuro</label>
-                </div>
-            </div>
-        </section>
     </main>
 
-
-
-    <!-- Sidebar móvil -->
+    <!-- Sidebar mobile -->
     <div class="offcanvas offcanvas-start bg-umami" id="menuMobile">
         <div class="offcanvas-header">
-            <h5 class="text-umami-cream">Menú</h5>
+            <a href="../index.html" class="text-center mb-4">
+                <img src="../assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="w-50">
+            </a>
             <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="#inicio"
-                        data-bs-dismiss="offcanvas">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="#pedidos"
-                        data-bs-dismiss="offcanvas">Pedidos</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="#productos"
-                        data-bs-dismiss="offcanvas">Productos</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="#usuarios"
-                        data-bs-dismiss="offcanvas">Usuarios</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="#config"
-                        data-bs-dismiss="offcanvas">Configuración</a></li>
+                <li class="nav-item active"><a class="nav-link text-umami-cream" href="dashboard.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="pedidos.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-bag me-2"></i> Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="productos.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-box-seam me-2"></i> Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-people me-2"></i> Usuarios</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
                 <li class="nav-item mt-3"><a href="login.html" class="btn-secundario w-100">Cerrar sesión</a></li>
             </ul>
         </div>

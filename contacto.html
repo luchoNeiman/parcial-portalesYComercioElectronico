@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Hamburguesería de hongos</title>
+    <title>UMAMI - Registro</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -90,7 +90,7 @@
                                 del cuál estaremos
                                 leyendo sus respuestas.</p>
                         </div>
-                        <form action="#" class="contact-form" method="post">
+                        <form action="#" class="contact-form" method="get" id="form-contacto">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre completo</label>
                                 <input type="text" id="nombre" name="nombre" class="form-control borde-cream" required>
@@ -101,16 +101,17 @@
                             </div>
                             <div class="mb-3">
                                 <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" class="form-control borde-cream">
+                                <input type="tel" id="telefono" name="telefono" class="form-control borde-cream"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" rows="5" class="form-control borde-cream"
-                                    required></textarea>
+                                <textarea id="mensaje" name="mensaje" rows="5"
+                                    class="form-control borde-cream"></textarea>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" id="terminos" class="form-check-input" required>
-                                <label for="terminos" class="form-check-label">Desea recibir promociones</label>
+                                <input type="checkbox" id="terminos" class="form-check-input">
+                                <label for="terminos" class="form-check-label">Acepta los terminos</label>
                             </div>
                             <button type="submit" class="btn btn-secundario">Enviar</button>
                         </form>
@@ -133,6 +134,22 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Modal de compra exitosa -->
+        <div class="modal fade" id="modalformContacto" tabindex="-1" aria-labelledby="modalmodalformContactoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center bg-cream">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title w-100" id="modalformContactoLabel">¡Formulario enviado con éxito!
+                        </h5>
+                        <button type="button" class="btn-close text-umami" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="bg-umami text-center py-3 shadow">
