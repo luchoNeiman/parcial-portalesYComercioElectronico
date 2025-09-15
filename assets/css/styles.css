@@ -520,16 +520,16 @@ textarea::placeholder {
     border-top: 2px solid var(--color-umami-cream);
 }
 
-.card.bg-umami {
+.card-perfil-carrito {
     border: 2px solid var(--color-umami-cream);
 }
 
-.card h2,
-.card h3 {
+.card-perfil-carrito h2,
+.card-perfil-carrito h3 {
     font-family: var(--font-heading);
 }
 
-.card ul li {
+.card-perfil-carrito ul li {
     margin-bottom: 0.5rem;
 }
 
@@ -551,6 +551,12 @@ form input {
 .size-img-producto-carrito {
     width: 5rem;
     height: auto;
+}
+
+.cont-producto-carrito {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -732,7 +738,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .card.bg-umami {
+    .card-perfil-carrito {
         padding: 1.5rem;
     }
 
@@ -793,7 +799,7 @@ footer {
         width: 4rem;
     }
 
-    .card.bg-umami h2 {
+    .card-perfil-carrito h2 {
         font-size: 1.25rem;
     }
 
@@ -1000,7 +1006,7 @@ footer {
         font-size: 1.75rem;
     }
 
-    .card.bg-umami {
+    .card-perfil-carrito {
         padding: 2rem;
     }
 
@@ -1149,7 +1155,7 @@ footer {
         font-size: 2rem;
     }
 
-    .card.bg-umami {
+    .card-perfil-carrito {
         padding: 2.5rem;
     }
 
