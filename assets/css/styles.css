@@ -577,6 +577,19 @@ footer {
     width: 25%;
 }
 
+/* ---------------- PRODUCTOS ADMIN ---------------- */
+.badge-acciones-admin {
+    background-color: var(--color-umami-green);
+    color: var(--color-umami-cream);
+    margin-right: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.badge-acciones-admin:hover {
+    background-color: var(--color-umami-cream);
+    color: var(--color-umami-green);
+}
+
 
 /*  Mobile */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -849,11 +862,6 @@ footer {
         display: none !important;
     }
 
-    /* Contenido principal ocupa todo */
-    .dashboard-main {
-        padding: 1rem;
-    }
-
     .contenedor-contenido-dashboard {
         padding: .5rem;
     }
@@ -869,6 +877,38 @@ footer {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    /* ---------------- PRODUCTOS ADMIN ---------------- */
+    .productosAdmin-main {
+        padding: 1rem;
+    }
+
+    .card-producto-admin {
+        background-color: var(--color-umami-cream);
+        border: 2px solid var(--color-umami-green);
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-producto-admin h5 {
+        font-size: 1rem;
+        color: var(--color-umami-green);
+        font-weight: 700;
+    }
+
+    .card-producto-admin p {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-producto-admin .badge-acciones-admin {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.85rem;
+        border-radius: 0.5rem;
+    }
+
+
+
 }
 
 /* Tablet */
@@ -1087,7 +1127,30 @@ footer {
         max-width: 50%;
     }
 
+    /* ---------------- PRODUCTOS ADMIN ---------------- */
+    .card-producto-admin {
+        background-color: var(--color-umami-cream);
+        border: 2px solid var(--color-umami-green);
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
+    .card-producto-admin h5 {
+        font-size: 1rem;
+        color: var(--color-umami-green);
+        font-weight: 700;
+    }
+
+    .card-producto-admin p {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .card-producto-admin .badge-acciones-admin {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.85rem;
+        border-radius: 0.5rem;
+    }
 }
 
 /* Desktop chico */
@@ -1208,5 +1271,10 @@ footer {
     .card-acceso-responsive {
         flex: 0 0 33.333%;
         max-width: 33.333%;
+    }
+
+    /* ---------------- PRODUCTOS ADMIN ---------------- */
+    td {
+        width: 100%;
     }
 }
