@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Dashboard Admin</title>
+    <title>UMAMI - Ver Producto</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-cream">
+<body>
     <main class="d-flex">
         <!-- Sidebar -->
         <aside class="aside-dashboard bg-umami d-none d-md-flex flex-column p-3 min-vh-100">
@@ -26,9 +26,9 @@
             </a>
             <nav class="flex-grow-1">
                 <ul class="nav flex-column">
-                    <li class="nav-item active"><a class="nav-link text-umami-cream" href="dashboard.html"><i
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"><i
                                 class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link text-umami-cream" href="productos.html"><i
+                    <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"><i
                                 class="bi bi-box-seam me-2"></i> Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"><i
                                 class="bi bi-tags me-2"></i> Categorías</a></li>
@@ -43,8 +43,7 @@
         </aside>
 
         <!-- Contenido principal -->
-        <div class="flex-grow-1 contenedor-contenido-dashboard">
-
+        <div class="productosAdmin-main flex-grow-1 contenedor-contenido-dashboard">
             <!-- Navbar mobile -->
             <div class="d-md-none mb-3">
                 <button class="btn btn-primario" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">
@@ -52,65 +51,51 @@
                 </button>
             </div>
 
-            <h1 class="mb-4">Panel de Administración</h1>
+            <h1 class="h3 text-umami mb-4">Detalle del Producto</h1>
 
-            <!-- Métricas rápidas -->
-            <section id="resumen" class="mb-5">
-                <div class="row g-3">
-                    <div class="col-6 col-lg-3 metricas-rapidas-dashboard">
-                        <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>12</h2>
-                            <p>Pedidos pendientes</p>
-                        </div>
+            <!-- Ficha del producto -->
+            <div class="card shadow-sm border-0">
+                <div class="row g-0">
+                    <!-- Imagen -->
+                    <div
+                        class="col-md-4 text-center p-4 bg-umami rounded-4 d-flex align-items-center justify-content-center">
+                        <img src="../assets/img/productos/hamburguesa-clasica-umami-productos.webp" alt="Clásica Umami"
+                            class="img-fluid rounded shadow-sm" style="max-height: 250px; object-fit: contain;">
                     </div>
-                    <div class="col-6 col-lg-3 metricas-rapidas-dashboard">
-                        <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>85</h2>
-                            <p>Productos activos</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 metricas-rapidas-dashboard">
-                        <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>$120k</h2>
-                            <p>Ventas del mes</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 metricas-rapidas-dashboard">
-                        <div class="card bg-umami text-umami-cream text-center p-3">
-                            <h2>350</h2>
-                            <p>Usuarios registrados</p>
+                    <!-- Datos -->
+                    <div class="col-md-8 rounded-4 text-umami">
+                        <div class="card-body p-4 rounded-4">
+                            <h3 class="card-title">Clásica Umami</h3>
+                            <p class="mb-4">Medallón de gírgolas frescas, queso cheddar vegano, lechuga,
+                                tomate, cebolla morada y salsa especial Umami, en pan artesanal de papa.</p>
+
+                            <dl class="row mb-4">
+                                <dt class="col-sm-4">ID:</dt>
+                                <dd class="col-sm-8">001</dd>
+
+                                <dt class="col-sm-4">Categoría:</dt>
+                                <dd class="col-sm-8">Hamburguesa</dd>
+
+                                <dt class="col-sm-4">Etiqueta:</dt>
+                                <dd class="col-sm-8">Clásico</dd>
+
+                                <dt class="col-sm-4">Precio:</dt>
+                                <dd class="col-sm-8">$7.000</dd>
+
+                                <dt class="col-sm-4">Stock:</dt>
+                                <dd class="col-sm-8">30 unidades</dd>
+                            </dl>
+
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="productos.html" class="btn btn-secundario"><i
+                                        class="bi bi-arrow-left me-2"></i> Volver</a>
+                                <a href="editar-producto.html" class="btn btn-primario"><i
+                                        class="bi bi-pencil-square me-2"></i> Editar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- Accesos directos -->
-            <section id="accesos">
-                <h2 class="mb-4">Gestión rápida</h2>
-                <div class="row g-3">
-                    <div class="col-md-4 card-acceso-responsive">
-                        <a href="categorias.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
-                            <i class="bi bi-tags display-5 mb-3 text-umami"></i>
-                            <h3 class="h3">Categorias</h3>
-                            <p class="small">Gestiona las categorias de los productos</p>
-                        </a>
-                    </div>
-                    <div class="col-md-4 card-acceso-responsive">
-                        <a href="productos.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
-                            <i class="bi bi-box-seam display-5 mb-3 text-umami"></i>
-                            <h3 class="h3">Productos</h3>
-                            <p class="small">Administra el menú y los precios</p>
-                        </a>
-                    </div>
-                    <div class="col-md-4 card-acceso-responsive">
-                        <a href="usuarios.html" class="card p-4 h-100 text-center shadow-sm bg-cream border-umami">
-                            <i class="bi bi-people display-5 mb-3 text-umami"></i>
-                            <h3 class="h3">Usuarios</h3>
-                            <p class="small">Controla clientes y roles</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </main>
 
@@ -124,9 +109,9 @@
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column">
-                <li class="nav-item active"><a class="nav-link text-umami-cream" href="dashboard.html"
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"
                         data-bs-dismiss="offcanvas"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="productos.html"
+                <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"
                         data-bs-dismiss="offcanvas"><i class="bi bi-box-seam me-2"></i> Productos</a></li>
                 <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"
                         data-bs-dismiss="offcanvas"><i class="bi bi-tags me-2"></i> Categorías</a></li>
@@ -138,7 +123,6 @@
             </ul>
         </div>
     </div>
-
 </body>
 
 </html>

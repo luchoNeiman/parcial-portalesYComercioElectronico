@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAMI - Crear Producto</title>
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Bootstrap JS local -->
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+    <!-- JS -->
+    <script src="../assets/js/index.js" defer></script>
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main class="d-flex">
+        <!-- Sidebar -->
+        <aside class="aside-dashboard bg-umami d-none d-md-flex flex-column p-3 min-vh-100">
+            <a href="../index.html" class="text-center mb-4">
+                <img src="../assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="w-50">
+            </a>
+            <nav class="flex-grow-1">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"><i
+                                class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                    <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"><i
+                                class="bi bi-box-seam me-2"></i> Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"><i
+                                class="bi bi-tags me-2"></i> Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"><i
+                                class="bi bi-people me-2"></i> Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"><i
+                                class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html" class="btn-secundario w-100 mt-auto"><i class="bi bi-box-arrow-right me-2"></i>
+                Cerrar sesión</a>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="productosAdmin-main flex-grow-1 contenedor-contenido-dashboard">
+            <!-- Navbar mobile -->
+            <div class="d-md-none mb-3">
+                <button class="btn btn-primario" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">
+                    <i class="bi bi-list"></i> Menú
+                </button>
+            </div>
+
+            <h1 class="h3 text-umami mb-4">Crear Nuevo Producto</h1>
+
+            <!-- Formulario de creación -->
+            <form class="bg-cream p-4 rounded shadow-sm">
+                <div class="mb-3">
+                    <label for="productoID" class="form-label">ID</label>
+                    <input type="text" id="productoID" class="form-control" placeholder="Ej: 012">
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoImagen" class="form-label">Imagen</label>
+                    <input type="file" id="productoImagen" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoNombre" class="form-label">Nombre</label>
+                    <input type="text" id="productoNombre" class="form-control"
+                        placeholder="Ej: Hamburguesa Veggie Deluxe">
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoDescripccion" class="form-label">Descripcción</label>
+                    <textarea name="productosDescripccion" id="productoDescripccion" class="form-control"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoCategoria" class="form-label">Categoría</label>
+                    <select id="productoCategoria" class="form-select">
+                        <option selected disabled>Seleccionar categoría</option>
+                        <option>Hamburguesa</option>
+                        <option>Wrap</option>
+                        <option>Papas Fritas</option>
+                        <option>Bebida</option>
+                        <option>Condimento</option>
+                        <option>Postre</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoEtiqueta" class="form-label">Etiqueta</label>
+                    <input type="text" id="productoEtiqueta" class="form-control"
+                        placeholder="Ej: Clásico, Gourmet, Picante">
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoPrecio" class="form-label">Precio</label>
+                    <input type="number" id="productoPrecio" class="form-control" placeholder="Ej: 7500">
+                </div>
+
+                <div class="mb-3">
+                    <label for="productoStock" class="form-label">Stock</label>
+                    <input type="number" id="productoStock" class="form-control" placeholder="Ej: 20">
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <a href="productos.html" class="btn btn-primario">Cancelar</a>
+                    <a href="productos.html" class="btn btn-primario">Crear producto</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Sidebar mobile -->
+    <div class="offcanvas offcanvas-start bg-umami" id="menuMobile">
+        <div class="offcanvas-header">
+            <a href="../index.html" class="text-center mb-4">
+                <img src="../assets/img/ui/logo-umami.svg" alt="Logo UMAMI" class="w-50">
+            </a>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-box-seam me-2"></i> Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-tags me-2"></i> Categorías</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-people me-2"></i> Usuarios</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"
+                        data-bs-dismiss="offcanvas"><i class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
+                <li class="nav-item mt-3"><a href="../index.html" class="btn-secundario w-100">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
