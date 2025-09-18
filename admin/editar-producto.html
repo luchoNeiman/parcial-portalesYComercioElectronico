@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMAMI - Editar Producto</title>
+    <title>UMAMI - Dashboard Admin</title>
     <!-- Bootstrap CSS local -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!--CSS -->
@@ -54,7 +54,7 @@
             <h1 class="h3 text-umami mb-4">Editar Producto</h1>
 
             <!-- Formulario de edición -->
-            <form class="bg-cream p-4 rounded shadow-sm">
+            <form class="bg-umami p-4 rounded shadow-sm">
                 <div class="mb-3">
                     <label for="productoID" class="form-label">ID</label>
                     <input type="text" id="productoID" class="form-control" value="001" readonly>
@@ -63,7 +63,7 @@
                 <div class="mb-3">
                     <label for="productoImagen" class="form-label">Imagen</label>
                     <input type="file" id="productoImagen" class="form-control">
-                    <small class="text-muted">Imagen actual:</small>
+                    <small>Imagen actual:</small>
                     <img src="../assets/img/productos/hamburguesa-clasica-umami-productos.webp" alt="Clásica Umami"
                         class="img-thumbnail mt-2" style="width:120px;">
                 </div>
@@ -104,7 +104,7 @@
                     <input type="number" id="productoStock" class="form-control" value="30">
                 </div>
 
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end gap-2">
                     <a href="productos.html" class="btn btn-primario">Cancelar</a>
                     <a href="productos.html" class="btn btn-primario">Guardar cambios</a>
                 </div>
@@ -122,16 +122,16 @@
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"
-                        data-bs-dismiss="offcanvas"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
-                <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"
-                        data-bs-dismiss="offcanvas"><i class="bi bi-box-seam me-2"></i> Productos</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"
-                        data-bs-dismiss="offcanvas"><i class="bi bi-tags me-2"></i> Categorías</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"
-                        data-bs-dismiss="offcanvas"><i class="bi bi-people me-2"></i> Usuarios</a></li>
-                <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"
-                        data-bs-dismiss="offcanvas"><i class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="dashboard.html"><i
+                            class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                <li class="nav-item active"><a class="nav-link text-umami-cream" href="productos.html"><i
+                            class="bi bi-box-seam me-2"></i> Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="categorias.html"><i
+                            class="bi bi-tags me-2"></i> Categorías</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="usuarios.html"><i
+                            class="bi bi-people me-2"></i> Usuarios</a></li>
+                <li class="nav-item"><a class="nav-link text-umami-cream" href="perfil-admin.html"><i
+                            class="bi bi-person-circle me-2"></i> Mi perfil</a></li>
                 <li class="nav-item mt-3"><a href="../index.html" class="btn-secundario w-100">Cerrar sesión</a></li>
             </ul>
         </div>
