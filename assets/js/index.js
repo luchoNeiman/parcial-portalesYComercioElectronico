@@ -141,29 +141,29 @@ if (combosWrapper && 'MutationObserver' in window) {
 
 //Tabla a Cards Usuarios - Admin
 document.addEventListener("DOMContentLoaded", () => {
-  const tablaUsuarios = document.querySelector("#tablaUsuarios tbody");
-  const cardsContainer = document.getElementById("cardsUsuariosContainer");
+    const tablaUsuarios = document.querySelector("#tablaUsuarios tbody");
+    const cardsContainer = document.getElementById("cardsUsuariosContainer");
 
-  if (tablaUsuarios && cardsContainer) {
-    [...tablaUsuarios.rows].forEach(row => {
-      const celdas = row.cells;
+    if (tablaUsuarios && cardsContainer) {
+        [...tablaUsuarios.rows].forEach(row => {
+            const celdas = row.cells;
 
-      // Card principal
-      const card = document.createElement("div");
-      card.className = "card-usuario-admin mb-3 p-3 bg-cream borde-verde rounded";
+            // Card principal
+            const card = document.createElement("div");
+            card.className = "card-usuario-admin mb-3 p-3 bg-cream borde-verde rounded";
 
-      // Header con nombre
-      const header = document.createElement("div");
-      header.className = "d-flex align-items-center mb-2";
-      header.innerHTML = `
+            // Header con nombre
+            const header = document.createElement("div");
+            header.className = "d-flex align-items-center mb-2";
+            header.innerHTML = `
         <i class="bi bi-person-circle fs-4 me-2 text-umami"></i>
         <h5 class="mb-0">${celdas[1].innerText}</h5>
       `;
-      card.appendChild(header);
+            card.appendChild(header);
 
-      // Info detallada
-      const info = document.createElement("div");
-      info.innerHTML = `
+            // Info detallada
+            const info = document.createElement("div");
+            info.innerHTML = `
         <p class="mb-1"><strong>ID:</strong> ${celdas[0].innerText}</p>
         <p class="mb-1"><strong>Email:</strong> ${celdas[2].innerText}</p>
         <p class="mb-1"><strong>Teléfono:</strong> ${celdas[3].innerText}</p>
@@ -172,18 +172,48 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="mb-1"><strong>Rol:</strong> ${celdas[5].innerText}</p>
         <p class="mb-1"><strong>Desde:</strong> ${celdas[6].innerText}</p>
       `;
-      card.appendChild(info);
+            card.appendChild(info);
 
-      // Acciones
-      const acciones = document.createElement("div");
-      acciones.className = "mt-2";
-      acciones.innerHTML = celdas[7].innerHTML;
-      card.appendChild(acciones);
+            // Acciones
+            const acciones = document.createElement("div");
+            acciones.className = "mt-2";
+            acciones.innerHTML = celdas[7].innerHTML;
+            card.appendChild(acciones);
 
-      // Insertar en el contenedor
-      cardsContainer.appendChild(card);
-    });
-  }
+            // Insertar en el contenedor
+            cardsContainer.appendChild(card);
+        });
+    }
 });
 
+
+
+
+
+// Loader con animación de hongo rebotando
+document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.getElementById("loader");
+    const hongo = document.querySelector("#loader .hongo img");
+
+    if (hongo) {
+        // Animación de rebote con Web Animations API
+        hongo.animate(
+            [
+                { transform: "translateY(0)" },
+                { transform: "translateY(-30px)" },
+                { transform: "translateY(0)" }
+            ],
+            {
+                duration: 1200,
+                iterations: Infinity,
+                easing: "ease-in-out"
+            }
+        );
+
+        // Mantener loader fijo por 3 segundos y luego ocultar
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 1500);
+    }
+});
 
