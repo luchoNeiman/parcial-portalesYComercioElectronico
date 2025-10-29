@@ -139,7 +139,7 @@ if (combosWrapper && 'MutationObserver' in window) {
 }
 
 
-//Tabla a Cards Usuarios - Admin
+// Tabla a Cards Usuarios - Admin
 document.addEventListener("DOMContentLoaded", () => {
     const tablaUsuarios = document.querySelector("#tablaUsuarios tbody");
     const cardsContainer = document.getElementById("cardsUsuariosContainer");
@@ -148,43 +148,41 @@ document.addEventListener("DOMContentLoaded", () => {
         [...tablaUsuarios.rows].forEach(row => {
             const celdas = row.cells;
 
-            // Card principal
             const card = document.createElement("div");
-            card.className = "card-usuario-admin mb-3 p-3 bg-cream borde-verde rounded";
+            card.className = "card-usuario-admin mb-3 p-3 bg-cream borde-verde rounded shadow-sm";
 
-            // Header con nombre
+            // Header
             const header = document.createElement("div");
             header.className = "d-flex align-items-center mb-2";
             header.innerHTML = `
-        <i class="bi bi-person-circle fs-4 me-2 text-umami"></i>
-        <h5 class="mb-0">${celdas[1].innerText}</h5>
-      `;
+                <i class="bi bi-person-circle fs-4 me-2 text-umami"></i>
+                <h5 class="mb-0 text-umami">${celdas[0].innerText}</h5>
+            `;
             card.appendChild(header);
 
-            // Info detallada
+            // Info
             const info = document.createElement("div");
             info.innerHTML = `
-        <p class="mb-1"><strong>ID:</strong> ${celdas[0].innerText}</p>
-        <p class="mb-1"><strong>Email:</strong> ${celdas[2].innerText}</p>
-        <p class="mb-1"><strong>Teléfono:</strong> ${celdas[3].innerText}</p>
-        <p class="mb-1"><strong>Ciudad:</strong> ${celdas[4].innerText}</p>
-        <p class="mb-1"><strong>Dirección de envío:</strong> Av. Siempre Viva 123</p>
-        <p class="mb-1"><strong>Rol:</strong> ${celdas[5].innerText}</p>
-        <p class="mb-1"><strong>Desde:</strong> ${celdas[6].innerText}</p>
-      `;
+                <p class="mb-1"><strong>Email:</strong> ${celdas[1].innerText}</p>
+                <p class="mb-1"><strong>Teléfono:</strong> ${celdas[2].innerText}</p>
+                <p class="mb-1"><strong>Ciudad:</strong> ${celdas[3].innerText}</p>
+                <p class="mb-1"><strong>Dirección de envío:</strong> Av. Siempre Viva 123</p>
+                <p class="mb-1"><strong>Rol:</strong> ${celdas[4].innerText}</p>
+                <p class="mb-1"><strong>Desde:</strong> ${celdas[5].innerText}</p>
+            `;
             card.appendChild(info);
 
             // Acciones
             const acciones = document.createElement("div");
-            acciones.className = "mt-2";
-            acciones.innerHTML = celdas[7].innerHTML;
+            acciones.className = "d-flex gap-2 mt-3";
+            acciones.innerHTML = celdas[6].innerHTML;
             card.appendChild(acciones);
 
-            // Insertar en el contenedor
             cardsContainer.appendChild(card);
         });
     }
 });
+
 
 
 

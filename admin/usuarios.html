@@ -53,11 +53,10 @@
             </div>
 
             <!-- Tabla de usuarios -->
-            <div class="table-responsive d-none d-lg-block">
+            <div class="table-responsive d-none d-lg-block bg-umami pt-3 px-3 rounded-3">
                 <table id="tablaUsuarios" class="table table-striped align-middle">
                     <thead class="bg-umami text-umami-cream">
                         <tr>
-                            <th>ID</th>
                             <th>Nombre</th>
                             <th>Email</th>
                             <th>Teléfono</th>
@@ -69,7 +68,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>U01</td>
                             <td>Luciano Neiman</td>
                             <td>luciano.neiman@davinci.edu.ar</td>
                             <td>+54 11 5555-1234</td>
@@ -83,23 +81,31 @@
                                     data-bs-target="#modalEditar"><i class="bi bi-pencil-square"></i></button>
                                 <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
                                     data-bs-target="#modalEliminar"><i class="bi bi-trash"></i></button>
+                                <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
+                                    data-bs-target="#modalCompras">
+                                    <i class="bi bi-cart3"></i>
+                                </button>
                             </td>
                         </tr>
                         <tr>
-                            <td>U02</td>
                             <td>María González</td>
                             <td>maria.gonzalez@example.com</td>
                             <td>+54 351 444-5678</td>
                             <td>Córdoba</td>
-                            <td>Cliente</td>
+                            <td>Administrador</td>
                             <td>2024-06-01</td>
                             <td>
-                                <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
-                                    data-bs-target="#modalVer"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-sm badge-acciones-admin " data-bs-toggle="modal"
+                                    data-bs-target="#modalVer"><i class="bi bi-eye "></i></button>
                                 <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
                                     data-bs-target="#modalEditar"><i class="bi bi-pencil-square"></i></button>
                                 <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
                                     data-bs-target="#modalEliminar"><i class="bi bi-trash"></i></button>
+                                <button class="btn btn-sm badge-acciones-admin" data-bs-toggle="modal"
+                                    data-bs-target="#modalCompras">
+                                    <i class="bi bi-cart3"></i>
+                                </button>
+
                             </td>
                         </tr>
                     </tbody>
@@ -136,7 +142,6 @@
         </div>
     </div>
 
-    <!-- Modals -->
     <!-- Crear -->
     <div class="modal fade" id="modalCrear" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -199,8 +204,6 @@
                 </div>
                 <div class="modal-body">
                     <dl>
-                        <dt>ID:</dt>
-                        <dd>U01</dd>
                         <dt>Nombre:</dt>
                         <dd>Luciano Neiman</dd>
                         <dt>Email:</dt>
@@ -293,6 +296,51 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Ver Compras -->
+    <div class="modal fade" id="modalCompras" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-cream">
+                <div class="modal-header">
+                    <h5 class="modal-title text-umami">Compras del Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped align-middle">
+                        <thead class="bg-umami text-umami-cream">
+                            <tr>
+                                <th>ID Pedido</th>
+                                <th>Fecha</th>
+                                <th>Productos</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>2024-11-25</td>
+                                <td>Clásica Umami x2, Papas Rústicas</td>
+                                <td>$17.500</td>
+                                <td><span class="badge bg-umami">Entregado</span></td>
+                            </tr>
+                            <tr>
+                                <td>#1002</td>
+                                <td>2024-12-02</td>
+                                <td>Fungi BBQ, Bebida Kombucha</td>
+                                <td>$12.300</td>
+                                <td><span class="badge bg-cream">Pendiente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primario" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

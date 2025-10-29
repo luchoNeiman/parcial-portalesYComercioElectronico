@@ -271,21 +271,21 @@ footer {
 
 /* ---------------- LOADER ---------------- */
 #loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-umami-green); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-umami-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
 }
 
 #loader .hongo img {
-  width: 100px;
-  height: auto;
+    width: 100px;
+    height: auto;
 }
 
 
@@ -664,6 +664,16 @@ footer {
     color: var(--color-umami-green);
 }
 
+/* ---------------- Cards de usuarios (responsive admin) ---------------- */
+.card-usuario-admin {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-usuario-admin:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 
 /*  Mobile */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -981,6 +991,13 @@ footer {
         border-radius: 0.5rem;
     }
 
+    /* ---------------- Cards de usuarios (responsive admin) ---------------- */
+    #cardsUsuariosContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
 }
 
 /* Tablet */
@@ -1230,6 +1247,13 @@ footer {
         padding: 0.35rem 0.6rem;
         font-size: 0.85rem;
         border-radius: 0.5rem;
+    }
+
+    /* ---------------- Cards de usuarios (responsive admin) ---------------- */
+    #cardsUsuariosContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
